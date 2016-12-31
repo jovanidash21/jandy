@@ -1,0 +1,8 @@
+# Dependency directory
+bower_components/
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
