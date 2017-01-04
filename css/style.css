@@ -17,3 +17,8 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
      JJJJJJJJJ            OOOOOOOOO                 VVVAAAAAAA                   AAAAAAANNNNNNNN         NNNNNNNIIIIIIIIII
 
 */
+.jandy-header
+{
+  background-color: rgba(21, 21, 21, 1);
+  padding: 30px 0;
+}
