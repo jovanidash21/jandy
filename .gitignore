@@ -1,6 +1,9 @@
 # Dependency directory
 bower_components/
 
+# Webstorm files
+.idea/
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
