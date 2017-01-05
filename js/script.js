@@ -16,16 +16,18 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
    JJ:::::::::JJ        OO:::::::::OO              V:::VA:::::A                 A:::::A N::::::N        N::::::NI::::::::I
      JJJJJJJJJ            OOOOOOOOO                 VVVAAAAAAA                   AAAAAAANNNNNNNN         NNNNNNNIIIIIIIIII
 */
-$('.navbar a.dropdown-toggle').on('click', function(e) {
-      var $el = $(this);
-      var $parent = $(this).offsetParent(".dropdown-menu");
-      $(this).parent("li").toggleClass('open');
+$(document).ready(function() {
+  $('.navbar a.dropdown-toggle').on('click', function(e) {
+    var $el = $(this);
+    var $parent = $(this).offsetParent(".dropdown-menu");
+    $(this).parent("li").toggleClass('open');
 
-      if(!$parent.parent().hasClass('nav')) {
-          $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
-      }
+    if(!$parent.parent().hasClass('nav')) {
+        $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+    }
 
-      $('.nav li.open').not($(this).parents("li")).removeClass("open");
+    $('.nav li.open').not($(this).parents("li")).removeClass("open");
 
-      return false;
+    return false;
   });
+});  
