@@ -17,6 +17,13 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
      JJJJJJJJJ            OOOOOOOOO                 VVVAAAAAAA                   AAAAAAANNNNNNNN         NNNNNNNIIIIIIIIII
 
 */
+body
+{
+  background-color: #ededed;
+  font-family: 'Teko', sans-serif;
+  position: relative;
+  margin-top: 0;
+}
 .jandy-header
 {
   background-color: rgba(21, 21, 21, 1);
@@ -25,6 +32,26 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
   width: 100%;
   z-index: 1;
 }
+.jandy-navbar
+{
+  background-color: rgba(21, 21, 21, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navbar
+{
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-default
+{
+  background-color: rgba(21, 21, 21, 1);
+  border: 1px solid rgba(255, 29, 178, 1);
+}
 .navbar .navbar-nav 
 {
   display: inline-block;
@@ -32,5 +59,29 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
 }
 .navbar .navbar-collapse 
 {
+  padding-top: 15px;
   text-align: center;
+}
+.navbar-nav .dropdown-menu .caret 
+{
+  transform: rotate(-90deg);
+}
+.navbar-default .navbar-nav>li>a
+{
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover
+{
+  background-color: transparent;
+  color: rgba(255, 29, 178, 1);
+}
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover 
+{
+  color: rgba(255, 255, 255, 1);
 }

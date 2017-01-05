@@ -14,6 +14,9 @@
 		<title>Jandy</title>
 		<link rel="shortcut icon" href="./favicon.ico" type="image/ico">
 
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+
 		<!-- CSS Libraries -->
 		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.min.css">
@@ -50,134 +53,136 @@
 		</section>
 		<!-- /.jandy-header -- >
 
-		<!-- Navigation Bar -->
-		<!-- .navbar -->
-		<nav class="navbar navbar-inverse">
+		<!-- Navigation Bar-->
+		<!-- .jandy-navbar -->
+		<section class="jandy-navbar">
 		    <div class="container">
+		    	<div class="row">
+		    		<nav class="navbar navbar-default">
+				        <!-- Logo -->
+				        <!-- .navbar-header -->
+				        <div class="navbar-header">
+				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				            </button>
+				        </div>
+				        <!-- /.navbar-header -->
 
-		        <!-- Logo -->
-		        <!-- .navbar-header -->
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-		        </div>
-		        <!-- /.navbar-header -->
-
-		        <!-- Menu Items -->
-		        <!-- .navbar-collapse -->
-		        <div class="navbar-collapse collapse">
-		            <ul class="nav navbar-nav">
-		            	<li>
-		                	<a href="#">Home</a>
-		                </li>
-		                <li>
-		                	<a href="#">About</a>
-		                </li>
-		                <li>
-		                	<a href="#">Gallery</a>
-		                </li>
-		                <li>
-		                	<a href="#">Services</a>
-		                </li>
-		                <li>
-		                	<a href="#">Clients</a>
-		                </li>
-		                <li>
-		                	<a href="#">Contact</a>
-		                </li>
-		                <li>
-		                	<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-		                		Theme
-		                		<b class="caret"></b>
-		                	</a>
-		                	<ul class="dropdown-menu">
-		                		<li>
-		                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-				                		UI-Kits
-				                		<b class="caret"></b>
-				                	</a>
-				                	<ul class="dropdown-menu">
-			                            <li>
-			                            	<a href="#">Grid</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Cards</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Buttons</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Cards</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Lists</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Modals</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Alerts & Toasts</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Panels</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Loaders</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Tabs & Steps</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Other</a>
-			                            </li>
-			                        </ul>
-		                		</li>
-		                		<li>
-		                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-				                		Tables
+				        <!-- Menu Items -->
+				        <!-- .navbar-collapse -->
+				        <div class="navbar-collapse collapse">
+				            <ul class="nav navbar-nav">
+				            	<li class="active">
+				                	<a href="#">Home</a>
+				                </li>
+				                <li>
+				                	<a href="#">About</a>
+				                </li>
+				                <li>
+				                	<a href="#">Gallery</a>
+				                </li>
+				                <li>
+				                	<a href="#">Services</a>
+				                </li>
+				                <li>
+				                	<a href="#">Clients</a>
+				                </li>
+				                <li>
+				                	<a href="#">Contact</a>
+				                </li>
+				                <li>
+				                	<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+				                		Theme
 				                		<b class="caret"></b>
 				                	</a>
 				                	<ul class="dropdown-menu">
 				                		<li>
-			                            	<a href="#">Table</a>
-			                            </li>
-			                            <li>
-			                            	<a href="#">Datatable</a>
-			                            </li>
-				                	</ul>
-				                </li>
-				                <li>
-	                            	<a href="#">Forms</a>
-	                            </li>
-	                            <li>
-		                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-				                		Icons
-				                		<b class="caret"></b>
-				                	</a>
-				                	<ul class="dropdown-menu">
+				                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+						                		UI-Kits
+						                		<b class="caret"></b>
+						                	</a>
+						                	<ul class="dropdown-menu">
+					                            <li>
+					                            	<a href="#">Grid</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Cards</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Buttons</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Cards</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Lists</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Modals</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Alerts & Toasts</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Panels</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Loaders</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Tabs & Steps</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Other</a>
+					                            </li>
+					                        </ul>
+				                		</li>
 				                		<li>
-			                            	<a href="#">Glyphicon</a>
+				                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+						                		Tables
+						                		<b class="caret"></b>
+						                	</a>
+						                	<ul class="dropdown-menu">
+						                		<li>
+					                            	<a href="#">Table</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Datatable</a>
+					                            </li>
+						                	</ul>
+						                </li>
+						                <li>
+			                            	<a href="#">Forms</a>
 			                            </li>
 			                            <li>
-			                            	<a href="#">Font-Awesome</a>
-			                            </li>
+				                			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+						                		Icons
+						                		<b class="caret"></b>
+						                	</a>
+						                	<ul class="dropdown-menu">
+						                		<li>
+					                            	<a href="#">Glyphicon</a>
+					                            </li>
+					                            <li>
+					                            	<a href="#">Font-Awesome</a>
+					                            </li>
+						                	</ul>
+						                </li>
+						                <li>
+						                	<a href="#">License</a>
+						                </li>
 				                	</ul>
 				                </li>
-				                <li>
-				                	<a href="#">License</a>
-				                </li>
-		                	</ul>
-		                </li>
-		            </ul>
-		        </div>
-		        <!-- /.navbar-collapse -->
-
+				            </ul>
+				        </div>
+			        	<!-- /.navbar-collapse -->
+					</nav>    
+			    </div>
 		    </div>
-		</nav>
-		<!-- /.navbar -->
+		</section>
+		<!-- /.jandy-navbar -->
 
    		<!-- Javascript Libs -->
         <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
