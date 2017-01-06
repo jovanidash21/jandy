@@ -17,7 +17,7 @@ J:::::::JJJ:::::::J  O:::::::OOO:::::::O         V:::::::VA:::::A             A:
      JJJJJJJJJ            OOOOOOOOO                 VVVAAAAAAA                   AAAAAAANNNNNNNN         NNNNNNNIIIIIIIIII
 */
 $(document).ready(function() {
-  $('.navbar a.dropdown-toggle').on('click', function(e) {
+  $('.navbar a.dropdown-toggle').hover(function(e) {
     var $el = $(this);
     var $parent = $(this).offsetParent(".dropdown-menu");
     $(this).parent("li").toggleClass('open');
