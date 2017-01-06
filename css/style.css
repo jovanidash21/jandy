@@ -83,6 +83,7 @@ body
 .navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover 
 {
+  background-color: transparent;
   color: rgba(255, 255, 255, 1);
 }
 ul.nav li:hover > ul.dropdown-menu 
@@ -95,4 +96,28 @@ ul.nav li:hover > ul.dropdown-menu
   width: 100%;
   max-width: 100%;
   line-height: 1;
+}
+#sliderIntro .carousel-control.right,
+#sliderIntro .carousel-control.left 
+{
+  background-image: none;
+}
+#sliderIntro .carousel-indicators li
+{
+  border: 1px solid rgba(100, 100, 100, 0.6);
+  background-color: rgba(100, 100, 100, 0.6);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+#sliderIntro .carousel-indicators li:hover
+{
+  border: 1px solid rgba(255, 29, 178, 0.8);
+  background-color: rgba(150, 150, 150, 0.8);
+}
+#sliderIntro .carousel-indicators .active
+{
+  border: 1px solid rgba(255, 29, 178, 0.5);
+  background-color: rgba(255, 29, 178, 0.8);  
 }
