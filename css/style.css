@@ -121,3 +121,8 @@ ul.nav li:hover > ul.dropdown-menu
   border: 1px solid rgba(255, 29, 178, 0.5);
   background-color: rgba(255, 29, 178, 0.8);  
 }
+#sliderIntro .glyphicon-chevron-left,
+#sliderIntro .glyphicon-chevron-right
+{
+  color: rgba(255, 29, 178, 1);
+}
