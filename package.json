@@ -12,6 +12,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.1.2",
+    "sass": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
