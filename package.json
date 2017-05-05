@@ -1,14 +1,20 @@
 {
   "name": "jandy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
+  "author": "Jovani Warguez",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "bower": "^1.8.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovanidash21/jandy.git"
   },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovanidash21/jandy/issues"
+  },
+  "homepage": "https://github.com/jovanidash21/jandy#readme",
+  "dependencies": {},
   "devDependencies": {
     "asset-builder": "^1.1.0",
     "del": "^2.2.2",
@@ -31,18 +37,5 @@
     "jshint": "^2.9.4",
     "lazypipe": "^1.0.1",
     "wiredep": "^4.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jovanidash21/jandy.git"
-  },
-  "author": "Jovani Warguez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jovanidash21/jandy/issues"
-  },
-  "homepage": "https://github.com/jovanidash21/jandy#readme"
+  }
 }
