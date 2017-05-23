@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "bootstrap.css": {
+      "files": [
+        "styles/bootstrap.scss"
+      ]
+    },
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    }
+  }
+}
