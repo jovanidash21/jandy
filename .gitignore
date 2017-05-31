@@ -1,17 +1,22 @@
+# Dependency directory
+node_modules/
+bower_components/
+
+# Gulp dist directory
+dist/
+
+# Gulp GH pages cache directory
+.publish/
+
+# IntelliJ IDE directory
+.idea/
+
 # Logs
 logs
 *.log
 npm-debug.log*
 
-# Dependency directory
-node_modules/
-bower_components/
-
-# Webstorm files
-.idea/
-
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
-
