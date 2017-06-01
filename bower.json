@@ -1,11 +1,9 @@
 {
-  "name": "Jovani Warguez",
-  "authors": [
-    "Jovani Warguez <warguezjovani@yahoo.com>"
-  ],
+  "name": "jandy",
   "description": "",
-  "main": "",
-  "license": "MIT",
+  "main": "gulpfile.js",
+  "author": "Jovani Warguez",
+  "license": "ISC",
   "homepage": "",
   "ignore": [
     "**/.*",
