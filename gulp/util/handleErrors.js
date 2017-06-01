@@ -9,3 +9,4 @@ module.exports = function() {
     }).apply(this, args);
 
     this.emit('end');
+};
