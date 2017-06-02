@@ -61,7 +61,11 @@ module.exports = {
     fonts: {
         globs: globs.fonts,
         src: assets + 'fonts',
-        dest: dist + 'fonts'
+        dest: dist + 'fonts',
+        bowerFonts: [
+          './bower_components/bootstrap-sass/assets/fonts/bootstrap/**.*',
+          './bower_components/font-awesome/fonts/**.*'
+        ]
     },
     images: {
         settings: {
