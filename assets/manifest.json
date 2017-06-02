@@ -11,6 +11,11 @@
         "styles/bootstrap.scss"
       ]
     },
+    "font-awesome.css": {
+      "files": [
+        "styles/font-awesome.scss"
+      ]
+    },
     "main.js": {
       "files": [
         "scripts/main.js"
