@@ -13,7 +13,7 @@ var jsTasks = function (filename) {
             .pipe(plugins.concat, filename)
             .pipe(plugins.uglify, {
                 compress: {
-                    'drop_debugger': config.enabled.stripJSDebug
+                    'drop_debugger': config.enabled.production
                 }
             })
             .pipe(plugins.rename, ({

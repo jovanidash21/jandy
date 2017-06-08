@@ -9,5 +9,5 @@ gulp.task('jshint', function() {
         .pipe(plugins.debug({title: 'jshint:'}))
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'))
-        .pipe(plugins.if(config.enabled.failJSHintTask, plugins.jshint.reporter('fail')));
+        .pipe(plugins.if(config.enabled.production, plugins.jshint.reporter('fail')));
 });

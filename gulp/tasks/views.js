@@ -5,7 +5,7 @@ var handleErrors = require('../util/handleErrors');
 
 gulp.task('views', function buildHTML() {
     return gulp.src(config.views.src)
-        .pipe(plugins.pug())
+        .pipe(plugins.pug(plugins.if(!config.enabled.production, {pretty: true})))
         .on('error', handleErrors)
         .pipe(plugins.debug({title: 'views:'}))
     .pipe(gulp.dest(config.views.dest));
