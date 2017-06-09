@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-y: scroll;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// No border
+.no-border {
+  border: 0 !important;
+}
+.no-border-top {
+  border-top: 0 !important;
+}
+.no-border-right {
+  border-right: 0 !important;
+}
+.no-border-bottom {
+  border-bottom: 0 !important;
+}
+.no-border-left {
+  border-left: 0 !important;
+}
+
+// No margin
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+
+// No padding
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
