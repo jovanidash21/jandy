@@ -8,5 +8,6 @@ gulp.task('views', function buildHTML() {
         .pipe(plugins.pug(plugins.if(!config.enabled.production, {pretty: true})))
         .on('error', handleErrors)
         .pipe(plugins.debug({title: 'views:'}))
-    .pipe(gulp.dest(config.views.dest));
+        .pipe(plugins.stripComments())
+        .pipe(gulp.dest(config.views.dest));
 });
