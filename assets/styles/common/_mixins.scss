@@ -1,0 +1,11 @@
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "variables";
+
+@mixin css3-prefix($property, $value) {
+  #{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -webkit-#{$property}: #{$value};
+}
