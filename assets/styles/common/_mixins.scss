@@ -9,3 +9,13 @@
   -khtml-#{$property}: #{$value};
   -webkit-#{$property}: #{$value};
 }
+
+@mixin box-shadow($string) {
+  @include css3-prefix('box-shadow', $string);
+}
+@mixin border-radius($string) {
+  @include css3-prefix('border-radius', $string);
+}
+@mixin text-shadow($string) {
+  text-shadow: $string;
+}
