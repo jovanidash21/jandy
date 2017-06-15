@@ -32,9 +32,33 @@
 @mixin border-radius($value) {
   @include css3-prefix('border-radius', $value);
 }
-/* Box Shadow
+/* Text Shadow
  * @param {h-shadow v-shadow blur-radius color|none|initial|inherit} $value - Value
  */
 @mixin text-shadow($value) {
   text-shadow: $value;
+}
+/* Border Bottom Left Radius
+ * @param {length|% [length|%]|initial|inherit} $value - Value
+ */
+@mixin border-bottom-left-radius($value) {
+  @include css3-prefix('border-bottom-left-radius', $value);
+}
+/* Border Bottom Right Radius
+ * @param {length|% [length|%]|initial|inherit} $value - Value
+ */
+@mixin border-bottom-right-radius($value) {
+  @include css3-prefix('border-bottom-right-radius', $value);
+}
+/* Border Top Left Radius
+ * @param {length|% [length|%]|initial|inherit} $value - Value
+ */
+@mixin border-top-left-radius($value) {
+  @include css3-prefix('border-top-left-radius', $value);
+}
+/* Border Top Right Radius
+ * @param {length|% [length|%]|initial|inherit} $value - Value
+ */
+@mixin border-top-right-radius($value) {
+  @include css3-prefix('border-top-right-radius', $value);
 }
