@@ -1,6 +1,10 @@
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "variables";
 
+/* CSS3 Prefixes
+ * @param {*} $property - Property
+ * @param {*} $value - Value
+ */
 @mixin css3-prefix($property, $value) {
   #{$property}: #{$value};
   -o-#{$property}: #{$value};
@@ -10,12 +14,27 @@
   -webkit-#{$property}: #{$value};
 }
 
-@mixin box-shadow($string) {
-  @include css3-prefix('box-shadow', $string);
+/* Box Shadow
+ * @param {none|h-shadow v-shadow blur spread color |inset|initial|inherit} $value - Value
+ */
+@mixin box-shadow($value) {
+  @include css3-prefix('box-shadow', $value);
 }
-@mixin border-radius($string) {
-  @include css3-prefix('border-radius', $string);
+/* Box Shadow
+ * @param {content-box|border-box|initial|inherit} $value - Value
+ */
+@mixin box-sizing($value) {
+  @include css3-prefix('box-sizing', $value);
 }
-@mixin text-shadow($string) {
-  text-shadow: $string;
+/* Box Shadow
+ * @param {1-4 length|% / 1-4 length|%|initial|inherit} $value - Value
+ */
+@mixin border-radius($value) {
+  @include css3-prefix('border-radius', $value);
+}
+/* Box Shadow
+ * @param {h-shadow v-shadow blur-radius color|none|initial|inherit} $value - Value
+ */
+@mixin text-shadow($value) {
+  text-shadow: $value;
 }
