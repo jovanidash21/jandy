@@ -14,30 +14,6 @@
   -webkit-#{$property}: #{$value};
 }
 
-/* Box Shadow
- * @param {none|h-shadow v-shadow blur spread color |inset|initial|inherit} $value - Value
- */
-@mixin box-shadow($value) {
-  @include css3-prefix('box-shadow', $value);
-}
-/* Box Shadow
- * @param {content-box|border-box|initial|inherit} $value - Value
- */
-@mixin box-sizing($value) {
-  @include css3-prefix('box-sizing', $value);
-}
-/* Box Shadow
- * @param {1-4 length|% / 1-4 length|%|initial|inherit} $value - Value
- */
-@mixin border-radius($value) {
-  @include css3-prefix('border-radius', $value);
-}
-/* Text Shadow
- * @param {h-shadow v-shadow blur-radius color|none|initial|inherit} $value - Value
- */
-@mixin text-shadow($value) {
-  text-shadow: $value;
-}
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
  */
@@ -61,4 +37,35 @@
  */
 @mixin border-top-right-radius($value) {
   @include css3-prefix('border-top-right-radius', $value);
+}
+/* Box Shadow
+ * @param {1-4 length|% / 1-4 length|%|initial|inherit} $value - Value
+ */
+@mixin border-radius($value) {
+  @include css3-prefix('border-radius', $value);
+}
+/* Box Shadow
+ * @param {none|h-shadow v-shadow blur spread color |inset|initial|inherit} $value - Value
+ */
+@mixin box-shadow($value) {
+  @include css3-prefix('box-shadow', $value);
+}
+/* Box Sizing
+ * @param {content-box|border-box|initial|inherit} $value - Value
+ */
+@mixin box-sizing($value) {
+  @include css3-prefix('box-sizing', $value);
+}
+/* Opacity
+ * @param {number|initial|inherit} $value - Value
+ */
+@mixin opacity($value) {
+  @include css3-prefix('opacity', $value);
+  filter: alpha(opacity=#{$value * 100}); // For IE8 and earlier versions
+}
+/* Text Shadow
+ * @param {h-shadow v-shadow blur-radius color|none|initial|inherit} $value - Value
+ */
+@mixin text-shadow($value) {
+  text-shadow: $value;
 }
