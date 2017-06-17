@@ -38,6 +38,23 @@ a {
   border-left: 0 !important;
 }
 
+// No border radius
+.no-border-radius {
+  @include border-radius: 0 !important;
+}
+.no-border-bottom-left-radius {
+  @include border-bottom-left-radius: 0 !important;
+}
+.no-border-bottom-right-radius {
+  @include border-bottom-right-radius: 0 !important;
+}
+.no-border-top-left-radius {
+  @include border-top-left-radius: 0 !important;
+}
+.no-border-top-right-radius {
+  @include border-top-right-radius: 0 !important;
+}
+
 // No margin
 .no-margin {
   margin: 0 !important;
