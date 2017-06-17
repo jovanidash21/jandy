@@ -14,6 +14,20 @@
   -webkit-#{$property}: #{$value};
 }
 
+/* Background Linear Gradient
+ * @param {*} $angle - Angle
+ * @param {color} $startColor - Start Color
+ * @param {color} $endColor - End Color
+ */
+@mixin background-linear-gradient($angle, $startColor, $endColor) {
+  background-color: $startColor; // For browsers that do not support gradients
+  background-image: linear-gradient($angle, $startColor, $endColor);
+  background-image: -o-linear-gradient($angle, $startColor, $endColor);
+  background-image: -ms-linear-gradient($angle, $startColor, $endColor);
+  background-image: -moz-linear-gradient($angle, $startColor, $endColor);
+  background-image: -webkit-linear-gradient($angle, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$startColor}, endColorStr=#{$endColor}); // For IE8 and earlier versions
+}
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
  */
