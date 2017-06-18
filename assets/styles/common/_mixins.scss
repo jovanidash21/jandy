@@ -15,18 +15,18 @@
 }
 
 /* Background Linear Gradient
- * @param {*} $angle - Angle
- * @param {color} $startColor - Start Color
- * @param {color} $endColor - End Color
+ * @param {direction|corner|angle} $angle - Angle
+ * @param {color length|%} $colorStop1 - Color Stop 1
+ * @param {color length|%} $colorStop2 - Color Stop 2
  */
-@mixin background-linear-gradient($angle, $startColor, $endColor) {
-  background-color: $startColor; // For browsers that do not support gradients
-  background-image: linear-gradient($angle, $startColor, $endColor);
-  background-image: -o-linear-gradient($angle, $startColor, $endColor);
-  background-image: -ms-linear-gradient($angle, $startColor, $endColor);
-  background-image: -moz-linear-gradient($angle, $startColor, $endColor);
-  background-image: -webkit-linear-gradient($angle, $startColor, $endColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$startColor}, endColorStr=#{$endColor}); // For IE8 and earlier versions
+@mixin background-linear-gradient($angle, $colorStop1, $colorStop2) {
+  background-color: $colorStop1; // For browsers that do not support gradients
+  background-image: linear-gradient($angle, $colorStop1, $colorStop2);
+  background-image: -o-linear-gradient($angle, $colorStop1, $colorStop2);
+  background-image: -ms-linear-gradient($angle, $colorStop1, $colorStop2);
+  background-image: -moz-linear-gradient($angle, $colorStop1, $colorStop2);
+  background-image: -webkit-linear-gradient($angle, $colorStop1, $colorStop2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$colorStop1}, endColorStr=#{$colorStop2}); // For IE8 and earlier versions
 }
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
