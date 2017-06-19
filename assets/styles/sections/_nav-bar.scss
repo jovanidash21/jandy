@@ -1,0 +1,44 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.nav-bar-section {
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  text-transform: uppercase;
+  .navbar-default {
+    background-color: transparent;
+    border: 2px solid $color-pink;
+    .navbar-collapse {
+      padding-top: 15px;
+    }
+    ul.navbar-nav {
+      display: inline-block;
+      float: none;
+      .dropdown-menu .caret {
+        transform: rotate(-90deg);
+      }
+      & > li > a {
+        @include transition(all 0.3s ease);
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $color-white;
+        }
+      }
+      & > li.active {
+        & > a,
+        & > a:focus,
+        & > a:hover {
+          background-color: transparent;
+          color: $color-pink;
+        }
+      }
+      li:hover > ul.dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
