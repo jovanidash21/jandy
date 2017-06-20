@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.navbar a.dropdown-toggle').hover(function(e) {
+  $('.nav-bar-section a.dropdown-toggle').hover(function(e) {
     var $el = $(this);
     var $parent = $(this).offsetParent(".dropdown-menu");
     $(this).parent("li").toggleClass('open');
