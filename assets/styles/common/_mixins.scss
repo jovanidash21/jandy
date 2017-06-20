@@ -83,6 +83,12 @@
 @mixin text-shadow($value) {
   text-shadow: $value;
 }
+/* Transform
+ * @param {none|transform-functions|initial|inherit} $value - Value
+ */
+@mixin transform($value) {
+    @include css3-prefix('transform', $value);
+}
 /* Transition
  * @param {css-property duration timing-function|none|initial|inherit} $value - Value
  */
