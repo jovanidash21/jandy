@@ -20,24 +20,30 @@
       .dropdown-menu .caret {
         @include transform(rotate(-90deg));
       }
-      & > li > a {
-        @include transition(all 0.3s ease);
-        &:focus,
-        &:hover {
+      & > li {
+        & > a {
+          @include transition(all 0.3s ease);
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            color: $white;
+          }
+        }
+        &.active {
+          & > a,
+          & > a:focus,
+          & > a:hover {
+            background-color: transparent;
+            color: $pink;
+          }
+        }
+        &.open > a {
           background-color: transparent;
           color: $white;
         }
-      }
-      & > li.active {
-        & > a,
-        & > a:focus,
-        & > a:hover {
-          background-color: transparent;
-          color: $pink;
+        &:hover > ul.dropdown-menu {
+          display: block;
         }
-      }
-      li:hover > ul.dropdown-menu {
-        display: block;
       }
     }
   }
