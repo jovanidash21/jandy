@@ -22,6 +22,23 @@ a {
   }
 }
 
+// Background
+.background-none {
+  background: none !important;
+}
+.background-black {
+  background-color: $black;
+}
+.background-gray {
+  background-color: $gray;
+}
+.background-pink {
+  background-color: $pink;
+}
+.background-white {
+  background-color: $white;
+}
+
 // No border
 .no-border {
   border: 0 !important;
