@@ -16,6 +16,11 @@
         "styles/font-awesome.scss"
       ]
     },
+    "owl.carousel.css": {
+      "files": [
+        "styles/owl.carousel.scss"
+      ]
+    },
     "main.js": {
       "files": [
         "scripts/main.js"
@@ -24,6 +29,9 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "owl.carousel.js": {
+      "bower": ["owl.carousel"]
     }
   },
   "config": {
