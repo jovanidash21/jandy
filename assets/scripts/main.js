@@ -14,12 +14,13 @@ $(document).ready(function() {
   });
 
   $('.hero-slider-section .owl-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: false,
+    autoplayTimeout: 5000,
+    dots: false,
     items: 1,
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
     pagination: false,
-    dots: false
+    responsiveClass:true
   });
 });
