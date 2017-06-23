@@ -1,3 +1,37 @@
+@import "../common/variables";
+@import "../common/mixins";
+
 .hero-slider-section {
   position: relative;
+  .owl-carousel {
+    .owl-nav {
+      @include transform(translate(-50%,-50%));
+      left: 50%;
+      margin-top: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      & [class*=owl-] {
+        @include opacity(0.3);
+        @include transition(opacity 0.3s ease);
+        background-color: $black;
+        margin: 0;
+        &:hover {
+          @include opacity(0.8);
+        }
+        i {
+          color: $white;
+          padding: 9px;
+        }
+      }
+      .owl-prev {
+        @include border-radius(0 5px 5px 0);
+        float: left;
+      }
+      .owl-next {
+        @include border-radius(5px 0 0 5px);
+        float: right;
+      }
+    }
+  }
 }
