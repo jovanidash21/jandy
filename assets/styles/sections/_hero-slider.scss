@@ -2,7 +2,6 @@
 @import "../common/mixins";
 
 .hero-slider-section {
-  position: relative;
   .owl-carousel {
     .owl-nav {
       @include transform(translate(-50%,-50%));
