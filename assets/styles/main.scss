@@ -12,8 +12,12 @@
 @import "common/mixins";
 @import "common/global";
 
+// Components SCSS
+@import "components/horizontal-rule";
+
 // Sections SCSS
 @import "sections/header";
 @import "sections/nav-bar";
 @import "sections/hero-slider";
+@import "sections/welcome";
 @import "sections/footer-bottom";
