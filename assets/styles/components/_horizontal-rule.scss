@@ -1,0 +1,12 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+hr.black-line {
+  border-top: 3px solid $color-black;
+}
+hr.pink-line {
+  border-top: 3px solid $color-persian-rose;
+}
+hr.white-line {
+  border-top: 3px solid $color-white;
+}
