@@ -13,13 +13,13 @@
       & [class*=owl-] {
         @include opacity(0.3);
         @include transition(opacity 0.3s ease);
-        background-color: $black;
+        background-color: $color-black;
         margin: 0;
         &:hover {
           @include opacity(0.8);
         }
         i {
-          color: $white;
+          color: $color-white;
           padding: 9px;
         }
       }

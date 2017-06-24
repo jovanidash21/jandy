@@ -2,13 +2,13 @@
 @import "../common/mixins";
 
 .nav-bar-section {
-  color: $white;
+  color: $color-white;
   font-size: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
   .navbar-default {
     background-color: transparent;
-    border: 2px solid $pink;
+    border: 2px solid $color-persian-rose;
     .navbar-collapse {
       padding-top: 15px;
     }
@@ -24,7 +24,7 @@
           &:focus,
           &:hover {
             background-color: transparent;
-            color: $white;
+            color: $color-white;
           }
         }
         &.active {
@@ -32,12 +32,12 @@
           & > a:focus,
           & > a:hover {
             background-color: transparent;
-            color: $pink;
+            color: $color-persian-pink;
           }
         }
         &.open > a {
           background-color: transparent;
-          color: $white;
+          color: $color-white;
         }
         &:hover > ul.dropdown-menu {
           display: block;

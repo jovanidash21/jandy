@@ -30,16 +30,16 @@ section[class*=-section] {
   background: none !important;
 }
 .background-black {
-  background-color: $black;
+  background-color: $color-mine-shaft !important;
 }
 .background-gray {
-  background-color: $gray;
+  background-color: $color-alabster !important;
 }
 .background-pink {
-  background-color: $pink;
+  background-color: $color-persian-pink !important;
 }
 .background-white {
-  background-color: $white;
+  background-color: $color-white !important;
 }
 
 // No border
