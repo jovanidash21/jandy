@@ -8,6 +8,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   .navbar-default {
+    @include transition(all 0.3s ease);
     background-color: transparent;
     border: 2px solid $color-persian-rose;
     .navbar-collapse {
@@ -22,6 +23,7 @@
       & > li {
         & > a {
           @include transition(all 0.3s ease);
+          color: $color-silver;
           &:focus,
           &:hover {
             background-color: transparent;
@@ -44,6 +46,9 @@
           display: block;
         }
       }
+    }
+    &.navbar-fixed-top {
+      @include background-color-opacity($color-cod-gray, 0.7);
     }
   }
 }

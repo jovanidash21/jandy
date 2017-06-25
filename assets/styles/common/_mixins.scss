@@ -28,6 +28,14 @@
   background-image: -webkit-linear-gradient($angle, $colorStop1, $colorStop2);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$colorStop1}, endColorStr=#{$colorStop2}); // For IE8 and earlier versions
 }
+/* Background Color Opacity
+ * @param {color} $color - Color
+ * @param {opacity} $opacity - Opacity
+ */
+@mixin background-color-opacity($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
  */
