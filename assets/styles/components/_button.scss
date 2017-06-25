@@ -6,7 +6,20 @@
   @include transition(all 0.3s ease);
 }
 .btn-lg {
-  padding: 20px;
+  font-size: 21px;
+  padding: 20px 40px;
+}
+.btn-md {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+.btn-sm {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.btn-xs {
+  font-size: 12px;
+  padding: 5px 10px;
 }
 .btn-primary {
   background-color: $color-persian-rose;
