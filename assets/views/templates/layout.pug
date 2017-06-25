@@ -14,7 +14,10 @@ html
     link(rel='stylesheet', href='./styles/bootstrap.min.css')
     link(rel='stylesheet', href='./styles/main.min.css')
   body
+    include ../sections/header
+    include ../sections/nav-bar
     block content
+    include ../sections/footer-bottom
     script(type='text/javascript', src='./scripts/jquery.min.js')
     script(type='text/javascript', src='./scripts/owl.carousel.min.js')
     script(type='text/javascript', src='./scripts/main.min.js')
