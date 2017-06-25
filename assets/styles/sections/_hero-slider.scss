@@ -22,6 +22,9 @@
           color: $color-white;
           padding: 9px;
         }
+        @media (max-width: $screen-sm-min) {
+          display: none;
+        }
       }
       .owl-prev {
         @include border-radius(0 5px 5px 0);
