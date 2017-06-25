@@ -1,0 +1,19 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.btn {
+  @include border-radius(2px);
+  @include transition(all 0.3s ease);
+}
+.btn-lg {
+  padding: 20px;
+}
+.btn-primary {
+  background-color: $color-persian-rose;
+  border: 1px solid $color-persian-rose;
+  &:focus,
+  &:hover {
+    background-color: $color-persian-pink;
+    border: 1px solid $color-persian-pink;
+  }
+}
