@@ -15,6 +15,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "animsition": "^4.0.2",
+    "bootstrap-autohidingnavbar": "^1.0.6",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
