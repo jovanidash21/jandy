@@ -6,6 +6,11 @@
       ],
       "main": true
     },
+    "animate.css": {
+      "files": [
+        "styles/animate.scss"
+      ]
+    },
     "bootstrap.css": {
       "files": [
         "styles/bootstrap.scss"
