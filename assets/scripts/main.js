@@ -26,6 +26,11 @@ $(document).ready(function() {
     }
   });
 
+  // Lightbox Config
+  lightbox.option({
+    disableScrolling: true
+  });
+
   // Nav bar section
   navBarSection.find('a.dropdown-toggle').hover(function(e) {
     var _this = $(this);
