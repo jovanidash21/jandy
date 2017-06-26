@@ -21,6 +21,9 @@
         "styles/font-awesome.scss"
       ]
     },
+    "lightbox.css": {
+      "bower": ["lightbox2"]
+    },
     "owl.carousel.css": {
       "files": [
         "styles/owl.carousel.scss"
@@ -37,6 +40,9 @@
     },
     "jquery.bootstrap-autohidingnavbar.js": {
       "bower": ["bootstrap-autohidingnavbar"]
+    },
+    "lightbox.js": {
+      "bower": ["lightbox2"]
     },
     "owl.carousel.js": {
       "bower": ["owl.carousel"]
