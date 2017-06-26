@@ -54,7 +54,6 @@ $(document).ready(function() {
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>"
     ],
-    pagination: false,
-    responsiveClass:true
+    pagination: false
   });
 });
