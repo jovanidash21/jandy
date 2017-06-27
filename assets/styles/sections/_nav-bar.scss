@@ -49,6 +49,9 @@
     }
     &.navbar-fixed-top {
       @include background-color-opacity($color-cod-gray, 0.7);
+      .navbar-collapse {
+        border-bottom: 2px solid $color-persian-pink;
+      }
     }
   }
 }
