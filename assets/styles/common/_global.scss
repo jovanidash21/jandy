@@ -138,6 +138,11 @@ section[class*=-section] {
   padding-left: 0 !important;
 }
 
+// No wrap
+.no-wrap {
+  white-space: nowrap !important;
+}
+
 // Overlay
 .overlay {
   bottom: 0;
