@@ -35,7 +35,6 @@
 @mixin background-color-opacity($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
-
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
  */
@@ -77,6 +76,13 @@
  */
 @mixin box-sizing($value) {
   @include css3-prefix('box-sizing', $value);
+}
+/* Color Opacity
+ * @param {color} $color - Color
+ * @param {opacity} $opacity - Opacity
+ */
+@mixin color-opacity($color, $opacity) {
+  color: rgba($color, $opacity);
 }
 /* Opacity
  * @param {number|initial|inherit} $value - Value
