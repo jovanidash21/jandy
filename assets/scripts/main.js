@@ -1,3 +1,25 @@
+// Detect IE version
+var detectIEVersion = function() {
+  var userAgent = window.navigator.userAgent;
+  var internetExplorer = userAgent.indexOf('MSIE ');
+  if (internetExplorer > 0) {
+    return parseInt(userAgent.substring(internetExplorer + 5, userAgent.indexOf('.', internetExplorer)));
+  }
+
+  var trident = userAgent.indexOf('Trident/');
+  if (trident > 0) {
+    var rv = userAgent.indexOf('rv:');
+    return parseInt( userAgent.substring(rv + 3,  userAgent.indexOf('.', rv)));
+  }
+
+  var edge = userAgent.indexOf('Edge/');
+  if (edge > 0) {
+    return parseInt(userAgent.substring(edge + 5, userAgent.indexOf('.', edge)));
+  }
+  return false;
+};
+var IEVersion = detectIEVersion();
+
 // Sections
 var headerSection = $('.header-section');
 var navBarSection = $('.nav-bar-section');
