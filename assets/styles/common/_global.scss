@@ -6,6 +6,7 @@ html {
   width: 100%;
 }
 body {
+  background-color: $color-dusty-gray;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -52,19 +53,22 @@ section[class*=-section] {
   background: none !important;
 }
 .background-black {
+  background-color: $color-black !important;
+}
+.background-dark {
   background-color: $color-mine-shaft !important;
 }
-.background-dark-gray {
-  background-color: $color-cod-gray !important;
-}
 .background-gray {
-  background-color: $color-alabaster !important;
+  background-color: $color-slate-gray !important;
 }
-.background-silver {
-  background-color: $color-silver !important;
+.background-light {
+  background-color: $color-alabaster !important;
 }
 .background-pink {
   background-color: $color-persian-pink !important;
+}
+.background-silver {
+  background-color: $color-silver !important;
 }
 .background-white {
   background-color: $color-white !important;
