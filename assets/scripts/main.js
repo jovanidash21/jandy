@@ -52,14 +52,14 @@ $(document).ready(function() {
   // Nav bar section
   navBarSection.find('a.dropdown-toggle').hover(function(e) {
     var _this = $(this);
-    var parent = _this.offsetParent(".dropdown-menu");
-    _this.parent("li").toggleClass('open');
+    var parent = _this.offsetParent('.dropdown-menu');
+    _this.parent('li').toggleClass('open');
 
     if(!parent.parent().hasClass('nav')) {
-        _this.next().css({"top": _this[0].offsetTop, "left": parent.outerWidth() - 4});
+        _this.next().css({'top': _this[0].offsetTop, 'left': parent.outerWidth() - 4});
     }
 
-    $('.nav li.open').not(_this.parents("li")).removeClass("open");
+    $('.nav li.open').not(_this.parents('li')).removeClass('open');
 
     return false;
   });
