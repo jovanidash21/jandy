@@ -41,6 +41,9 @@
     "jquery.bootstrap-autohidingnavbar.js": {
       "bower": ["bootstrap-autohidingnavbar"]
     },
+    "jquery.scrollUp.js": {
+      "bower": ["scrollup"]
+    },
     "lightbox.js": {
       "bower": ["lightbox2"]
     },
