@@ -1,0 +1,23 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.icon-circle {
+  background-color: $color-goblin;
+  border-radius: 50%;
+  color: $color-white;
+  height: 150px;
+  width: 150px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.icon-square {
+  background-color: $color-goblin;
+  border-radius: 2px;
+  color: $color-white;
+  height: 150px;
+  width: 150px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
