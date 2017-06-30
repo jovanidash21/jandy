@@ -13,7 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "animatescroll": "^1.0.7",
     "animatewithsass": "^3.2.2",
     "animsition": "^4.0.2",
     "bootstrap-autohidingnavbar": "^1.0.6",
