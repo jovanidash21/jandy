@@ -4,20 +4,26 @@
 .icon-circle {
   background-color: $color-goblin;
   border-radius: 50%;
-  color: $color-white;
+  display: table;
   height: 150px;
   width: 150px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  i {
+    color: $color-white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 .icon-square {
   background-color: $color-goblin;
   border-radius: 2px;
-  color: $color-white;
+  display: table;
   height: 150px;
   width: 150px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  i {
+    color: $color-white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
