@@ -8,6 +8,9 @@ dist/
 # Gulp GH pages cache directory
 .publish/
 
+# Gulp Real Favicon Data
+faviconData.json
+
 # IntelliJ IDE directory
 .idea/
 
