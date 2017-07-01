@@ -11,7 +11,7 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 // package (see the check-for-favicon-update task below).
 gulp.task('generate-favicon', function(done) {
 	realFavicon.generateFavicon({
-		masterPicture: './assets/images/favicon.png',
+		masterPicture: './dist/images/jandy-logo.svg',
 		dest: './dist/favicons',
 		iconsPath: './favicons/',
 		design: {
