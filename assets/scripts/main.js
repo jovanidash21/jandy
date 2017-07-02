@@ -21,9 +21,27 @@ var detectIEVersion = function() {
 var IEVersion = detectIEVersion();
 
 // Sections
-var headerSection = $('.header-section');
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
+
+$(window).scroll(function() {
+  var scrollHeight = $(window).scrollTop();
+  var htmlHeight = $(document).height();
+  var navBar = navBarSection.find('nav.navbar');
+
+  if (!navBar.parent().hasClass('nav-bar-section-wrapper')) {
+    navBar.wrap('<div class="nav-bar-section-wrapper"></div>');
+    navBarSection.find('.nav-bar-section-wrapper').height(navBarSection.outerHeight());
+  }
+
+  if (scrollHeight >= 1) {
+    navBar.addClass('navbar-fixed-top no-border').autoHidingNavbar({
+      hideOffset: htmlHeight/3
+    });
+  } else {
+    navBar.removeClass('navbar-fixed-top no-border');
+  }
+});
 
 $(document).ready(function() {
   // Lightbox Config

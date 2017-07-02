@@ -3,20 +3,37 @@
 
 .nav-bar-section {
   color: $color-white;
-  font-family: 'Teko', sans-serif;
-  font-size: 20px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
   .navbar-default {
     @include transition(all 0.5s ease);
     background-color: transparent;
-    border: 2px solid $color-persian-rose;
-    .navbar-collapse {
-      padding-top: 15px;
+    border: 2px solid $color-primary;
+    .navbar-header {
+      .navbar-brand {
+        @include display-flex(flex);
+        align-items: center;
+        height: 100%;
+        padding: 12px;
+        .site-logo {
+          @include transition(color 0.3s ease);
+          color: $color-white;
+          font-family: 'Tangerine', sans-serif;
+          font-size: 50px;
+          letter-spacing: 2px;
+          img {
+            height: 55px;
+          }
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
     }
     ul.navbar-nav {
       display: inline-block;
       float: none;
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+      letter-spacing: 3px;
       .dropdown-menu .caret {
         @include transform(rotate(-90deg));
       }
@@ -24,6 +41,7 @@
         & > a {
           @include transition(all 0.3s ease);
           color: $color-silver;
+          padding: 30px 20px;
           &:focus,
           &:hover {
             background-color: transparent;
@@ -35,7 +53,7 @@
           & > a:focus,
           & > a:hover {
             background-color: transparent;
-            color: $color-persian-pink;
+            color: $color-primary;
           }
         }
         &.open > a {
@@ -48,9 +66,9 @@
       }
     }
     &.navbar-fixed-top {
-      @include background-color-opacity($color-cod-gray, 0.7);
       .navbar-collapse {
-        border-bottom: 2px solid rgba($color-persian-pink, 0.7);
+        @include background-color-opacity($color-cod-gray, 0.7);
+        border-bottom: 2px solid rgba($color-primary, 0.7);
       }
     }
   }

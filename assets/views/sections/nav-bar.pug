@@ -1,16 +1,18 @@
-section.nav-bar-section.background-black.text-align-center
+section.nav-bar-section.background-black
   .container
     .row
-      nav.navbar.navbar-default.no-border-radius.no-margin-bottom
+      nav.navbar.navbar-default.no-border-radius.no-border-top.no-margin-bottom
         .navbar-header
+          .navbar-brand
+            a.site-logo(href='#')
+              img(src='./images/jandy-logo.svg', alt='jandy logo', title='jandy logo')
+              | Jandy
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-        .navbar-collapse.collapse.text-align-center
-          ul.nav.navbar-nav
-            li.active
-              a(href='#') Home
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
             li
               a(href='#') About
             li
@@ -18,60 +20,8 @@ section.nav-bar-section.background-black.text-align-center
             li
               a(href='#') Services
             li
+              a(href='#') Testimonials  
+            li
               a(href='#') Clients
             li
               a(href='#') Contact
-            li
-              a.dropdown-toggle(href='#', data-toggle='dropdown')
-                | Theme
-                b.caret
-              ul.dropdown-menu
-                li
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | UI-Kits
-                    b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#') Grid
-                    li
-                      a(href='#') Cards
-                    li
-                      a(href='#') Buttons
-                    li
-                      a(href='#') Cards
-                    li
-                      a(href='#') Lists
-                    li
-                      a(href='#') Modals
-                    li
-                      a(href='#') Alerts & Toasts
-                    li
-                      a(href='#') Panels
-                    li
-                      a(href='#') Loaders
-                    li
-                      a(href='#') Tabs & Steps
-                    li
-                      a(href='#') Other
-                li
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Tables
-                    b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#') Table
-                    li
-                      a(href='#') Datatable
-                li
-                  a(href='#') Forms
-                li
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Icons
-                    b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#') Glyphicon
-                    li
-                      a(href='#') Font-Awesome
-                li
-                  a(href='#') License
