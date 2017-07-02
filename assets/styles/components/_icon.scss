@@ -2,12 +2,10 @@
 @import "../common/mixins";
 
 .icon {
-  background-color: $color-goblin;
   display: table;
   height: 150px;
   width: 150px;
   i {
-    color: $color-white;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -17,5 +15,21 @@
   }
   &.icon-square {
     border-radius: 3px;
+  }
+  &.icon-primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  &.icon-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+  &.icon-tertiary {
+    background-color: $color-tertiary;
+    color: $color-white;
+  }
+  &.icon-quaternary {
+    background-color: $color-quaternary;
+    color: $color-black;
   }
 }
