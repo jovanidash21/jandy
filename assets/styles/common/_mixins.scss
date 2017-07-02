@@ -84,6 +84,13 @@
 @mixin color-opacity($color, $opacity) {
   color: rgba($color, $opacity);
 }
+/* Display Flex
+ * @param {flex|inline-flex} $value - Value
+ */
+@mixin display-flex($value) {
+  display: #{$value};
+  display: -webkit-#{$value};
+}
 /* Opacity
  * @param {number|initial|inherit} $value - Value
  */
