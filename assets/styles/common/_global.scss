@@ -70,8 +70,17 @@ section[class*=-section] {
 .background-light {
   background-color: $color-alabaster !important;
 }
-.background-pink {
-  background-color: $color-persian-pink !important;
+.background-primary {
+  background-color: $color-primary !important;
+}
+.background-secondary {
+  background-color: $color-secondary !important;
+}
+.background-tertiary {
+  background-color: $color-tertiary !important;
+}
+.background-quaternary {
+  background-color: $color-quaternary !important;
 }
 .background-silver {
   background-color: $color-silver !important;
