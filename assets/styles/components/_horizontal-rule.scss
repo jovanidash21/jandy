@@ -4,8 +4,17 @@
 hr.black-line {
   border-top: 3px solid $color-black;
 }
-hr.pink-line {
-  border-top: 3px solid $color-persian-rose;
+hr.primary-line {
+  border-top: 3px solid $color-primary;
+}
+hr.secondary-line {
+  border-top: 3px solid $color-secondary;
+}
+hr.tertiary-line {
+  border-top: 3px solid $color-tertiary;
+}
+hr.quaternary-line {
+  border-top: 3px solid $color-quaternary;
 }
 hr.white-line {
   border-top: 3px solid $color-white;
