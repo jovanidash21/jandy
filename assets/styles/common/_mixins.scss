@@ -35,6 +35,12 @@
 @mixin background-color-opacity($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
+/* Background Size
+ * @param {auto|length|cover|contain|initial|inherit} $value - Value
+ */
+@mixin background-size($value) {
+  @include css3-prefix('background-size', $value);
+}
 /* Border Bottom Left Radius
  * @param {length|% [length|%]|initial|inherit} $value - Value
  */
