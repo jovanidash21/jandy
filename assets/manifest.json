@@ -41,6 +41,9 @@
     "jquery.bootstrap-autohidingnavbar.js": {
       "bower": ["bootstrap-autohidingnavbar"]
     },
+    "jquery.mousewheel.js": {
+      "bower": ["jquery-mousewheel"]
+    },
     "jquery.scrollTo.js": {
       "bower": ["jquery.scrollTo"]
     },
