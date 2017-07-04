@@ -10,7 +10,8 @@
       position: absolute;
       top: 50%;
       width: 100%;
-      & [class*=owl-] {
+      .owl-prev,
+      .owl-next {
         @include opacity(0.3);
         @include transition(opacity 0.3s ease);
         background-color: $color-black;
