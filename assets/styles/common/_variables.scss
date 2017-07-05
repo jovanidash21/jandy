@@ -7,10 +7,13 @@ $color-black: #000;
 $color-bright-sun: #fed33c;
 $color-cod-gray: #1c1c1c;
 $color-dusty-gray: #979797;
+$color-east-bay: #3d547e;
 $color-electric-violet: #7a11d1;
 $color-goblin: #3d7d52;
 $color-gold: #ffd700;
 $color-mine-shaft: #212121;
+$color-mojo: #bf3e30;
+$color-old-gold: #d5b930;
 $color-persian-pink: #f77fc0;
 $color-persian-rose: #ff1db2;
 $color-silver: #ccc;
@@ -22,6 +25,13 @@ $color-primary: $color-electric-violet;
 $color-secondary: $color-bright-sun;
 $color-tertiary: $color-dusty-gray;
 $color-quaternary: $color-beige;
+
+// Override bootstrap brand colors
+$brand-primary: darken($color-electric-violet, 7.5%);
+$brand-success: $color-goblin;
+$brand-info: $color-east-bay;
+$brand-warning: $color-old-gold;
+$brand-danger: $color-mojo;
 
 /* Fonts */
 $icon-font-path: "../fonts/"; // Override bootstrap glyphicons path
