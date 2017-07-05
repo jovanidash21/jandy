@@ -22,11 +22,12 @@
   padding: 5px 10px;
 }
 .btn-primary {
-  background-color: $color-primary;
-  border: 1px solid $color-primary;
+  background-color: transparent;
+  border: 3px solid $color-primary;
+  color: inherit;
   &:focus,
   &:hover {
-    background-color: rgba($color-primary, 0.8);
-    border: 1px solid rgba($color-primary, 0.8);
+    background-color: $color-primary;
+    border: 3px solid $color-primary;
   }
 }
