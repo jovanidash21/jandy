@@ -1,7 +1,6 @@
-// Override bootstrap glyphicons path
-$icon-font-path: "../fonts/";
+/* Colors */
 
-// Colors
+// Color Variables
 $color-alabaster: #f9f9f9;
 $color-beige: #f5f5dc;
 $color-black: #000;
@@ -24,5 +23,9 @@ $color-secondary: $color-bright-sun;
 $color-tertiary: $color-dusty-gray;
 $color-quaternary: $color-beige;
 
-// Images
-$images: "../images";
+/* Fonts */
+$icon-font-path: "../fonts/"; // Override bootstrap glyphicons path
+$fonts: "../fonts"; // Fonts path
+
+/* Images */
+$images: "../images"; // Images path
