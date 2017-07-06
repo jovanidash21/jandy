@@ -50,6 +50,9 @@
     "jquery.scrollUp.js": {
       "bower": ["scrollup"]
     },
+    "jquery.stellar.js": {
+      "bower": ["jquery.stellar"]
+    },
     "lightbox.js": {
       "bower": ["lightbox2"]
     },
