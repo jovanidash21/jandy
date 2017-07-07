@@ -2,7 +2,16 @@
 @import "../common/mixins";
 
 .hero-slider-section {
+  height: 100%;
+  div:not(.owl-dots):not(.owl-nav) {
+    height: 100%;
+  }
   .owl-carousel {
+    .hero-item {
+      @include background-size(cover);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     .owl-nav {
       @include transform(translate(-50%,-50%));
       left: 50%;
