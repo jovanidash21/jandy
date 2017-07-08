@@ -44,9 +44,6 @@
     "jquery.mousewheel.js": {
       "bower": ["jquery-mousewheel"]
     },
-    "jquery.scrollTo.js": {
-      "bower": ["jquery.scrollTo"]
-    },
     "jquery.scrollUp.js": {
       "bower": ["scrollup"]
     },
