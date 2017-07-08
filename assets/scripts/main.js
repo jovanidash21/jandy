@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   // Nav bar section
   navBarSection.find('.navbar-fixed-top').autoHidingNavbar({
-    hideOffset: 190
+    hideOffset: 210
   });
   navBarSection.find('a.dropdown-toggle').hover(function(e) {
     var _this = $(this);
