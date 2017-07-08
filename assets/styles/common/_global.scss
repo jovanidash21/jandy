@@ -175,6 +175,17 @@ section[class*=-section] {
   width: 100%;
 }
 
+// ScrollUp
+#scrollUp {
+  @include border-radius(10px);
+  @include opacity(0.5)
+  background-color: $color-cod-gray;
+  bottom: 21px;
+  color: $color-primary;
+  padding: 0 10px 5px;
+  right: 21px;
+}
+
 // Section
 .content-section {
   padding: 70px 0;

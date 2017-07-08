@@ -30,6 +30,16 @@ $(document).ready(function() {
     disableScrolling: true
   });
 
+  // ScrollUp Config
+  $(function () {
+    $.scrollUp({
+      animation: 'slide',
+      scrollDistance: 400,
+      scrollSpeed: 400,
+      scrollText: "<i class='fa fa-angle-up fa-4x'></i>"
+    });
+});
+
   // Nav bar section
   navBarSection.find('.navbar-fixed-top').autoHidingNavbar({
     hideOffset: 210
