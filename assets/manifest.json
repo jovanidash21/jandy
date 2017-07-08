@@ -44,6 +44,9 @@
     "jquery.mousewheel.js": {
       "bower": ["jquery-mousewheel"]
     },
+    "jquery.nav.js": {
+      "bower": ["jQuery-One-Page-Nav"]
+    },
     "jquery.scrollUp.js": {
       "bower": ["scrollup"]
     },
