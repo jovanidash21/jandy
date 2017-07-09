@@ -5,7 +5,7 @@
   color: $color-white;
   .navbar-default {
     @include background-color-opacity($color-cod-gray, 0.5);
-    border-bottom: 2px solid rgba($color-primary, 0.5);
+    @include box-shadow(0 5px 5px rgba($color-black, 0.5));
     .navbar-brand {
       .site-logo {
         @include transition(color 0.5s ease);
