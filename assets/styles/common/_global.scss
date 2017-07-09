@@ -178,12 +178,16 @@ section[class*=-section] {
 // ScrollUp
 #scrollUp {
   @include border-radius(10px);
-  @include opacity(0.5)
+  @include opacity(0.5);
+  @include transition(opacity 0.3s ease);
   background-color: $color-cod-gray;
   bottom: 21px;
   color: $color-primary;
   padding: 0 12px 5px;
   right: 21px;
+}
+#scrollUp:hover {
+  @include opacity(1);
 }
 
 // Section
