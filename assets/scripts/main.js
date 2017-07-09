@@ -38,9 +38,13 @@ $(document).ready(function() {
       scrollSpeed: 400,
       scrollText: "<i class='fa fa-angle-up fa-4x'></i>"
     });
-});
+  });
 
   // Nav bar section
+  navBarSection.find('.navbar-nav').onePageNav({
+    changeHash: true,
+    scrollSpeed: 400
+  });
   navBarSection.find('.navbar-fixed-top').autoHidingNavbar({
     hideOffset: 210
   });
