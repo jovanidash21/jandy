@@ -16,6 +16,9 @@
         "styles/bootstrap.scss"
       ]
     },
+    "bootstrap.offcanvas.css": {
+      "bower": ["bootstrap-offcanvas"]
+    },
     "font-awesome.css": {
       "files": [
         "styles/font-awesome.scss"
@@ -37,6 +40,9 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "bootstrap.offcanvas.js": {
+      "bower": ["bootstrap-offcanvas"]
     },
     "jquery.bootstrap-autohidingnavbar.js": {
       "bower": ["bootstrap-autohidingnavbar"]
