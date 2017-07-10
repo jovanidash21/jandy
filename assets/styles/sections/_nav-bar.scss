@@ -3,52 +3,63 @@
 
 .nav-bar-section {
   color: $color-white;
-  .navbar-default {
-    @include background-color-opacity($color-cod-gray, 0.5);
-    @include box-shadow(0 5px 5px rgba($color-black, 0.5));
-    .navbar-brand {
-      .site-logo {
-        @include transition(color 0.5s ease);
-        color: $color-white;
-        font-family: 'Tangerine', sans-serif;
-        font-size: 50px;
-        letter-spacing: 2px;
-        img {
-          height: 55px;
-        }
-        &:hover {
-          color: $color-primary;
-        }
+}
+.navbar-default {
+  @include background-color-opacity($color-cod-gray, 0.5);
+  @include box-shadow(0 5px 5px rgba($color-black, 0.5));
+  .navbar-brand {
+    .site-logo {
+      @include transition(color 0.5s ease);
+      color: $color-white;
+      font-family: 'Tangerine', sans-serif;
+      font-size: 50px;
+      letter-spacing: 2px;
+      img {
+        height: 55px;
       }
+      &:hover {
+        color: $color-primary;
+      }
+    }  
+  }
+  .navbar-toggle {
+    @include transition(background-color 0.3s ease);
+    border: 1px solid $color-primary;
+    &:focus,
+    &:hover {
+      background-color: $color-primary;
     }
-    ul.navbar-nav {
-      @include transition(all 0.5s ease);
-      display: inline-block;
-      float: none;
-      font-family: 'Teko', sans-serif;
-      font-size: 20px;
-      letter-spacing: 3px;
-      .dropdown-menu .caret {
-        @include transform(rotate(-90deg));
-      }
-      & > li {
-        & > a {
-          @include transition(all 0.3s ease);
-          color: $color-silver;
-          padding: 30px 10px;
-          &:focus,
-          &:hover {
-            background-color: transparent;
-            color: $color-white;
-          }
+    .icon-bar {
+      background-color: $color-secondary;
+    }
+  }
+  ul.navbar-nav {
+    @include transition(all 0.5s ease);
+    display: inline-block;
+    float: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    .dropdown-menu .caret {
+      @include transform(rotate(-90deg));
+    }
+    & > li {
+      & > a {
+        @include transition(all 0.3s ease);
+        color: $color-silver;
+        padding: 30px 10px;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $color-white;
         }
-        &.active {
-          & > a,
-          & > a:focus,
-          & > a:hover {
-            background-color: transparent;
-            color: $color-primary;
-          }
+      }
+      &.active {
+        & > a,
+        & > a:focus,
+        & > a:hover {
+          background-color: transparent;
+          color: $color-primary;
         }
       }
     }
