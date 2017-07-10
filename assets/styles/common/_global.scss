@@ -214,3 +214,20 @@ section[class*=-section] {
 .text-align-justify {
   text-align: justify !important;
 }
+
+// Text color
+.text-color-black {
+  color: $color-mine-shaft;
+}
+.text-color-gray {
+  color: $color-slate-gray;
+}
+.text-color-primary {
+  color: $color-primary;
+}
+.text-color-secondary {
+  color: $color-secondary;
+}
+.text-color-white {
+  color: $color-alabaster;
+}
