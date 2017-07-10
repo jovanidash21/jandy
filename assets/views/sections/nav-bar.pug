@@ -8,19 +8,19 @@ section.nav-bar-section
               a.site-logo(href='#')
                 img(src='./images/jandy-logo.svg', alt='jandy logo', title='Logo')
                 | Jandy
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            button.navbar-toggle.offcanvas-toggle(type='button', data-toggle='offcanvas', data-target='#js-bootstrap-offcanvas')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-          .navbar-collapse.collapse
+          .navbar-offcanvas.navbar-offcanvas-touch(id='js-bootstrap-offcanvas')
             ul.nav.navbar-nav.navbar-right
               li
                 a(href='#about') About
               li
                 a(href='#gallery') Gallery
               li
-                a(href='#') Services
+                a(href='#services') Services
               li
-                a(href='#') Testimonials
+                a(href='#testimonials') Testimonials
               li
                 a(href='#contact') Contact

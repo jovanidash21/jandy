@@ -7,6 +7,11 @@
 .navbar-default {
   @include background-color-opacity($color-cod-gray, 0.5);
   @include box-shadow(0 5px 5px rgba($color-black, 0.5));
+  .navbar-header {
+    @media (max-width: $screen-xs-max) {
+      padding: 10px 0;
+    }
+  }
   .navbar-brand {
     .site-logo {
       @include transition(color 0.5s ease);
@@ -21,6 +26,9 @@
         color: $color-primary;
       }
     }  
+    @media (max-width: $screen-xs-max) {
+      padding: 2px 5px;
+    }
   }
   .navbar-toggle {
     @include transition(background-color 0.3s ease);
@@ -53,6 +61,14 @@
           background-color: transparent;
           color: $color-white;
         }
+        @media (max-width: $screen-xs-max) {
+          color: $color-black;
+          padding: 17px;
+          &:focus,
+          &:hover {
+            color: $color-secondary;
+          }
+        }
       }
       &.active {
         & > a,
@@ -62,6 +78,11 @@
           color: $color-primary;
         }
       }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .navbar-offcanvas {
+      background-color: $color-tertiary;
     }
   }
 }
