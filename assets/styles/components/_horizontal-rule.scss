@@ -1,21 +1,41 @@
 @import "../common/variables";
 @import "../common/mixins";
 
-hr.black-line {
-  border-top: 3px solid $color-black;
-}
-hr.primary-line {
-  border-top: 3px solid $color-primary;
-}
-hr.secondary-line {
-  border-top: 3px solid $color-secondary;
-}
-hr.tertiary-line {
-  border-top: 3px solid $color-tertiary;
-}
-hr.quaternary-line {
-  border-top: 3px solid $color-quaternary;
-}
-hr.white-line {
-  border-top: 3px solid $color-white;
+hr {
+  // Color
+  &.color-black-line {
+    border-top: 3px solid $color-black;
+  }
+  &.color-primary-line {
+    border-top: 3px solid $color-primary;
+  }
+  &.color-secondary-line {
+    border-top: 3px solid $color-secondary;
+  }
+  &.color-tertiary-line {
+    border-top: 3px solid $color-tertiary;
+  }
+  &.color-quaternary-line {
+    border-top: 3px solid $color-quaternary;
+  }
+  &.color-white-line {
+    border-top: 3px solid $color-white;
+  }
+  
+  // Length
+  &.length-one-line {
+    width: 10%;
+  }
+  &.length-two-line {
+    width: 25%;
+  }
+  &.length-three-line {
+    width: 50%;
+  }
+  &.length-four-line {
+    width: 75%;
+  }
+  &.length-five-line {
+    width: 90%;
+  }
 }
