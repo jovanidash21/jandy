@@ -23,6 +23,7 @@ var IEVersion = detectIEVersion();
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
+var sponsorsSection = $('.sponsors-section');
 
 $(document).ready(function() {
   // Lightbox Config
@@ -74,7 +75,27 @@ $(document).ready(function() {
     navText: [
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>"
-    ],
-    pagination: false
+    ]
+  });
+
+  // Sponsors section
+  var sponsorsSLider =  sponsorsSection.find('.owl-carousel');
+  sponsorsSLider.owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: false,
+    autoplayTimeout: 3000,
+    dots: false,
+    items: 5,
+    loop: true,
+    margin: 10,
+    pagination: true
+  });
+  sponsorsSLider.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+      sponsorsSLider.trigger('next.owl');
+    } else {
+      sponsorsSLider.trigger('prev.owl');
+    }
+    e.preventDefault();
   });
 });

@@ -1,0 +1,11 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.sponsors-section {
+  hr {
+    width: 50%;
+  }
+  p {
+    font-size: 20px;
+  }
+}
