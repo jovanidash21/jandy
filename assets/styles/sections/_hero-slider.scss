@@ -22,9 +22,9 @@
           color: $color-white;
           font-size: 111px;
           font-weight: 400;
-          margin: 0;
         }
         .hero-subtitle {
+          @include background-color-opacity($color-primary, 0.5);
           color: $color-secondary;
           font-size: 40px;
         }
