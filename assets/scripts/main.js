@@ -66,7 +66,6 @@ $(document).ready(function() {
   // Hero slider section
   heroSliderSection.find('.owl-carousel').owlCarousel({
     autoplay: true,
-    autoplayHoverPause: false,
     autoplayTimeout: 5000,
     dots: false,
     items: 1,
