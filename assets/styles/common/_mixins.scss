@@ -131,11 +131,17 @@
  * @param {none|transform-functions|initial|inherit} $value - Value
  */
 @mixin transform($value) {
-    @include css3-prefix('transform', $value);
+  @include css3-prefix('transform', $value);
 }
 /* Transition
  * @param {css-property duration timing-function|none|initial|inherit} $value - Value
  */
 @mixin transition($value) {
-    @include css3-prefix('transition', $value);
+  @include css3-prefix('transition', $value);
+}
+/* User Select
+ * @param {auto|none|text|all} $value - Value
+ */
+@mixin user-select($value) {
+  @include css3-prefix('user-select', $value);
 }
