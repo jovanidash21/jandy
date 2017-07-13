@@ -6,7 +6,7 @@
   div:not(.hero-text):not(.owl-dots):not(.owl-nav) {
     height: 100%;
   }
-  .owl-carousel {
+  .hero-slider {
     .hero-item {
       @include background-size(cover);
       @include text-shadow(0 0 21px $color-black);
