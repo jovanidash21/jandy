@@ -79,16 +79,13 @@ $(document).ready(function() {
   });
 
   // Sponsors section
-  var sponsorsSLider =  sponsorsSection.find('.owl-carousel');
+  var sponsorsSLider = sponsorsSection.find('.owl-carousel');
   sponsorsSLider.owlCarousel({
     autoplay: true,
-    autoplayHoverPause: false,
     autoplayTimeout: 3000,
-    dots: false,
     items: 5,
     loop: true,
-    margin: 10,
-    pagination: true
+    margin: 10
   });
   sponsorsSLider.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {

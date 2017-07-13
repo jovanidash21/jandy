@@ -5,7 +5,20 @@
   p {
     font-size: 20px;
   }
-  .owl-carousel {
+  .sponsors-slider {
     margin: 15px 0;
+    .owl-dots {
+      .owl-dot {
+        span {
+          background-color: $color-white;
+        }
+        &.active,
+        &:hover {
+          span {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
   }
 }
