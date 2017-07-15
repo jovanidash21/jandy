@@ -25,8 +25,8 @@
       "bower": [
         "jquery",
         "bootstrap-sass",
-        "bootstrap-offcanvas",
         "bootstrap-autohidingnavbar",
+        "bootstrap-offcanvas",
         "jquery-mousewheel",
         "jQuery-One-Page-Nav",
         "jquery.stellar",
