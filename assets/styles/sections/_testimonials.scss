@@ -1,0 +1,32 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+
+.testimonials-section {
+  blockquote {
+    font-size: 20px;
+  }
+  .testimonials-slider {
+    margin: 20px 0;
+    .testimonial-name {
+      font-size: 18px;
+    }
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        @include border-radius(5px);
+        @include transition(all 0.3s ease);
+        background-color: transparent;
+        border: 2px solid $color-black;
+        color: $color-black;
+        font-size: 17px;
+        margin: 10px;
+        padding: 5px 10px;
+        &:hover {
+          border-color: $color-primary;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

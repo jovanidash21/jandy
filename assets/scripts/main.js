@@ -23,6 +23,7 @@ var IEVersion = detectIEVersion();
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
+var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
 
 $(document).ready(function() {
@@ -65,6 +66,20 @@ $(document).ready(function() {
 
   // Hero slider section
   heroSliderSection.find('.owl-carousel').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    dots: false,
+    items: 1,
+    loop: true,
+    nav: true,
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>"
+    ]
+  });
+
+  // Testimonials section
+  testimonialsSection.find('.owl-carousel').owlCarousel({
     autoplay: true,
     autoplayTimeout: 5000,
     dots: false,
