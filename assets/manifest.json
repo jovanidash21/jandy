@@ -32,7 +32,8 @@
         "jquery.stellar",
         "lightbox2",
         "scrollup",
-        "owl.carousel"
+        "owl.carousel",
+        "wow"
       ]
     }
   },
