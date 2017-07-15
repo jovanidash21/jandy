@@ -32,5 +32,22 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.4.1"
+  },
+  "overrides": {
+    "bootstrap-offcanvas": {
+      "main": [
+        "src/sass/bootstrap.offcanvas.scss"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "flag-icon-css": {
+      "main": [
+        "sass/_flag-icon.scss"
+      ]
+    }
   }
 }

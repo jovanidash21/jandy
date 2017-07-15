@@ -39,7 +39,7 @@ var cssTasks = function(filename) {
       })();
 };
 
-gulp.task('styles', ['wiredep'], function() {
+gulp.task('styles', ['bower'], function() {
     var merged = merge();
         config.manifest.forEachDependency('css', function(dep) {
             var cssTasksInstance = cssTasks(dep.name);

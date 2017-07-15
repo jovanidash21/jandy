@@ -47,6 +47,14 @@ module.exports = {
             includePaths: ['.'],
             errLogToConsole: !argvProduction
         },
+        wiredepSettings: {
+            directory: './bower_components',
+            exclude: [
+                'animatewithsass',
+                'bootstrap-sass',
+                'owl.carousel'
+            ],
+        },
         proj: project.css,
         src: assets + 'styles',
         dest: dist + 'styles'
