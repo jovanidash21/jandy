@@ -41,16 +41,13 @@
       .owl-next {
         @include opacity(0.3);
         @include transition(opacity 0.3s ease);
+        color: $color-secondary;
         background-color: $color-black;
         font-size: 17px;
         margin: 0;
-        padding: 21px 17px;
+        padding: 30px 26px;
         &:hover {
           @include opacity(0.8);
-        }
-        i {
-          color: $color-secondary;
-          padding: 9px;
         }
         @media (max-width: $screen-sm-min) {
           display: none;
