@@ -82,8 +82,18 @@ $(document).ready(function() {
   sponsorsSLider.owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
-    items: 5,
-    margin: 10
+    margin: 10,
+    responsive:{
+      0:{
+          items: 1
+      },
+      500:{
+          items: 3
+      },
+      1000:{
+          items: 5
+      }
+    }
   });
   sponsorsSLider.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
