@@ -37,7 +37,8 @@
   "overrides": {
     "bootstrap-offcanvas": {
       "main": [
-        "src/sass/bootstrap.offcanvas.scss"
+        "src/sass/bootstrap.offcanvas.scss",
+        "dist/js/bootstrap.offcanvas.js"
       ]
     },
     "bootstrap-sass": {
