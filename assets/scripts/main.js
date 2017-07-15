@@ -83,7 +83,6 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 3000,
     items: 5,
-    loop: true,
     margin: 10
   });
   sponsorsSLider.on('mousewheel', '.owl-stage', function (e) {
