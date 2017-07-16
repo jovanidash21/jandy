@@ -1,0 +1,11 @@
+@import "variables";
+
+/* Colors */
+$brand-primary: darken($color-electric-violet, 7.5%) !default;
+$brand-success: $color-goblin !default;
+$brand-info: $color-east-bay !default;
+$brand-warning: $color-old-gold !default;
+$brand-danger: $color-mojo !default;
+
+/* Fonts */
+$icon-font-path: "../fonts/";
