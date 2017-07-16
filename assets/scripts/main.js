@@ -80,6 +80,7 @@ $(document).ready(function() {
 
   // Testimonials section
   testimonialsSection.find('.owl-carousel').owlCarousel({
+    animateOut: 'fadeOut',
     autoplay: true,
     autoplayTimeout: 5000,
     dots: false,
