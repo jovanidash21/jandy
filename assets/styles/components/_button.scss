@@ -4,30 +4,40 @@
 .btn {
   @include border-radius(2px);
   @include transition(all 0.3s ease);
+  background-color: transparent;
 }
 .btn-lg {
+  border-width: 4px;
   font-size: 21px;
   padding: 20px 40px;
 }
 .btn-md {
+  border-width: 3px;
   font-size: 18px;
   padding: 15px 30px;
 }
 .btn-sm {
+  border-width: 2px;
   font-size: 15px;
   padding: 10px 20px;
 }
 .btn-xs {
+  border-width: 1px;
   font-size: 12px;
   padding: 5px 10px;
 }
 .btn-primary {
-  background-color: transparent;
-  border: 3px solid $color-primary;
-  color: $color-primary;
-  &:focus,
-  &:hover {
-    background-color: $color-primary;
-    border: 3px solid $color-primary;
-  }
+  color: $brand-primary;
+}
+.btn-success {
+  color: $brand-success;
+}
+.btn-info {
+  color: $brand-info;
+}
+.btn-warning {
+  color: $brand-warning;
+}
+.btn-danger {
+  color: $brand-danger;
 }
