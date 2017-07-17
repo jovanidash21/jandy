@@ -20,12 +20,37 @@ var detectIEVersion = function() {
 };
 var IEVersion = detectIEVersion();
 
+// Scrolled into a section
+function scrolledInto(section) {
+  var scrollHeight = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  var distanceTop = section.offset().top;
+  var distanceBottom = distanceTop + 200;
+
+  var visible = (distanceTop >= scrollHeight) && (distanceBottom <= (scrollHeight + windowHeight));
+  return visible;
+}
+
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
 var servicesSection = $('.services-section');
 var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
+
+$(window).on('scroll', function() {
+  // Services section
+  if (scrolledInto(servicesSection)) {
+    servicesSection.find('.services-counter').countTo({
+      refreshInterval: 11,
+      speed: 900
+    });
+    console.log('services');
+
+    // Unbind scroll event
+    $(window).off('scroll');
+  }
+});
 
 $(document).ready(function() {
   // Lightbox Config
@@ -79,12 +104,6 @@ $(document).ready(function() {
     ]
   });
 
-  // Services section
-  servicesSection.find('.services-counter').countTo({
-    refreshInterval: 9,
-    speed: 900
-  });
-
   // Testimonials section
   testimonialsSection.find('.owl-carousel').owlCarousel({
     animateOut: 'fadeOut',
@@ -99,6 +118,7 @@ $(document).ready(function() {
       "<i class='fa fa-chevron-right'></i>"
     ]
   });
+
 
   // Sponsors section
   var sponsorsSLider = sponsorsSection.find('.owl-carousel');
