@@ -35,6 +35,9 @@
     "mocha": "^3.4.1"
   },
   "overrides": {
+    "bootstrap": {
+      "main": []
+    },
     "bootstrap-offcanvas": {
       "main": [
         "src/sass/bootstrap.offcanvas.scss",
