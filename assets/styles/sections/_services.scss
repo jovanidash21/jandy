@@ -1,0 +1,11 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.services-section {
+  p {
+    font-size: 20px;
+  }
+  .services-counter {
+    font-size: 150px;
+  }
+}
