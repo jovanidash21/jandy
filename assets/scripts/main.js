@@ -45,7 +45,6 @@ $(window).on('scroll', function() {
       refreshInterval: 11,
       speed: 900
     });
-    console.log('services');
 
     // Unbind scroll event
     $(window).off('scroll');
