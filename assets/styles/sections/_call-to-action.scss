@@ -2,5 +2,20 @@
 @import "../common/mixins";
 
 .call-to-action-section {
-
+  @include background-size(cover);
+  background-attachment: fixed;
+  background-image: url("#{$images}/call-to-action-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  &:after {
+    @include background-color-opacity($color-black, 0.9);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
