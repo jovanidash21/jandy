@@ -3,9 +3,8 @@
 
 .call-to-action-section {
   @include background-size(cover);
+  background: transparent;
   background-attachment: fixed;
-  background-image: url("#{$images}/call-to-action-bg.jpg");
-  background-position: center center;
   background-repeat: no-repeat;
   z-index: 1;
   &:after {
