@@ -29,12 +29,13 @@
         "bootstrap-offcanvas",
         "jquery-mousewheel",
         "jQuery-One-Page-Nav",
-        "jquery.stellar",
         "lightbox2",
         "matchHeight",
+        "parallax.js",
         "scrollup",
         "owl.carousel",
-        "wow"
+        "wow",
+        "jquery-migrate"
       ]
     }
   },
