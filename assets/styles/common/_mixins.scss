@@ -97,6 +97,12 @@
   display: #{$value};
   display: -webkit-#{$value};
 }
+/* Grayscale
+ * @param {percent} $value - Value
+ */
+@mixin grayscale($value) {
+  @include css3-prefix('filter', grayscale($value));
+}
 /* Opacity
  * @param {number|initial|inherit} $value - Value
  */
