@@ -24,6 +24,7 @@
     "vendor.js": {
       "bower": [
         "jquery",
+        "jquery-migrate",
         "bootstrap-sass",
         "bootstrap-autohidingnavbar",
         "bootstrap-offcanvas",
@@ -32,10 +33,10 @@
         "lightbox2",
         "matchHeight",
         "parallax.js",
-        "scrollup",
         "owl.carousel",
-        "wow",
-        "jquery-migrate"
+        "scrollup",
+        "waypoints",
+        "wow"
       ]
     }
   },
