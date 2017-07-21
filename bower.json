@@ -30,6 +30,7 @@
     "owl.carousel": "^2.2.1",
     "parallax.js": "^1.4.2",
     "scrollup": "^2.4.1",
+    "waypoints": "^4.0.1",
     "wow": "wowjs#^1.1.2"
   },
   "devDependencies": {
@@ -54,6 +55,11 @@
     "flag-icon-css": {
       "main": [
         "sass/_flag-icon.scss"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.min.js"
       ]
     }
   }
