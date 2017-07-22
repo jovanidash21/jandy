@@ -1,11 +1,21 @@
 .icon {
   display: table;
-  height: 150px;
-  width: 150px;
   i {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+  }
+  &.icon-big {
+    height: 150px;
+    width: 150px;
+  }
+  &.icon-medium {
+    height: 100px;
+    width: 100px;
+  }
+  &.icon-small {
+    height: 50px;
+    width: 50px;
   }
   &.icon-circle {
     @include border-radius(50%);
