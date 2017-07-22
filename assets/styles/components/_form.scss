@@ -1,0 +1,16 @@
+.form-control {
+  @include border-radius(2px);
+  @include placeholder() {
+    color: $color-cod-gray;
+  }
+  border: 1px solid $color-black;
+  font-size: 17px;
+  height: auto;
+  padding: 15px 10px;
+  &:active,
+  &:focus,
+  &:hover {
+    @include box-shadow(none);
+    border-color: $color-secondary;
+  }
+}
