@@ -1,6 +1,3 @@
-@import "../common/variables";
-@import "../common/mixins";
-
 .call-to-action-section {
   @include background-size(cover);
   background-attachment: fixed;
