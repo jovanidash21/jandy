@@ -7,10 +7,12 @@
     .sponsor-item {
       @include grayscale(100%);
       @include transition(filter 0.4s ease-in-out);
-      background-color: $color-porcelain;
       &:hover {
         @include grayscale(0);
       }
+    }
+    .owl-stage-outer {
+      background-color: $color-porcelain;
     }
     .owl-dots {
       .owl-dot {
