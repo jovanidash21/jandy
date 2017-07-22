@@ -28,21 +28,6 @@ var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
 
 $(document).ready(function() {
-  // Lightbox Config
-  lightbox.option({
-    disableScrolling: true
-  });
-
-  // ScrollUp Config
-  $(function () {
-    $.scrollUp({
-      animation: 'slide',
-      scrollDistance: 400,
-      scrollSpeed: 400,
-      scrollText: "<i class='fa fa-angle-up fa-4x'></i>"
-    });
-  });
-
   // Nav bar section
   navBarSection.find('.navbar-nav').onePageNav({
     changeHash: true,
@@ -132,5 +117,25 @@ $(document).ready(function() {
       sponsorsSLider.trigger('prev.owl');
     }
     e.preventDefault();
+  });
+
+  // Lightbox Config
+  lightbox.option({
+    disableScrolling: true
+  });
+
+  // ScrollUp Config
+  $(function () {
+    $.scrollUp({
+      animation: 'slide',
+      scrollDistance: 400,
+      scrollSpeed: 400,
+      scrollText: "<i class='fa fa-angle-up fa-4x'></i>"
+    });
+  });
+
+  // jQuery stellar config
+  $.stellar({ 
+    responsive: true 
   });
 });
