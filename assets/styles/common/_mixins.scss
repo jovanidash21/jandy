@@ -110,21 +110,21 @@
   @include css3-prefix('opacity', $value);
   filter: alpha(opacity=#{$value * 100}); // For IE8 and earlier versions
 }
-/* Placeholder Color
- * @param {color} $color - Color
+/* Placeholder
+ * @param {}
  */
-@mixin placeholder-color($color) {
-  ::-webkit-input-placeholder { // For Chrome / Opera / Safari
-    color: $color;
+@mixin placeholder() {
+  &::-webkit-input-placeholder { // For Chrome / Opera / Safari
+    @content;
   }
-  ::-moz-placeholder { // For Firefox 19 and up
-    color: $color;
+  &::-moz-placeholder { // For Firefox 19 and up
+    @content;
   }
-  :-moz-placeholder { // For Firefox 18 and earlier versions
-    color: $color
+  &:-moz-placeholder { // For Firefox 18 and earlier versions
+    @content;
   }
-  :-ms-input-placeholder { // For IE10 and up
-    color: $color;
+  &:-ms-input-placeholder { // For IE10 and up
+    @content;
   }
 }
 /* Text Shadow
