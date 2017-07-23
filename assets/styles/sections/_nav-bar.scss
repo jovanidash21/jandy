@@ -2,8 +2,8 @@
   color: $color-white;
 }
 .navbar-default {
-  @include background-color-opacity($color-cod-gray, 0.5);
   @include box-shadow(0 5px 5px rgba($color-black, 0.5));
+  background-color: $color-cod-gray;
   .navbar-header {
     @media (max-width: $screen-xs-max) {
       padding: 10px 0;
