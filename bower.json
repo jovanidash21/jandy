@@ -14,7 +14,6 @@
   ],
   "dependencies": {
     "animatewithsass": "^3.2.2",
-    "animsition": "^4.0.2",
     "bootstrap-autohidingnavbar": "^1.0.6",
     "bootstrap-offcanvas": "^2.4.0",
     "bootstrap-sass": "^3.3.7",
@@ -24,7 +23,7 @@
     "jquery-countTo": "^1.2.0",
     "jquery-migrate": "http://code.jquery.com/jquery-migrate-3.0.0.min.js",
     "jquery-mousewheel": "^3.1.13",
-    "jQuery-One-Page-Nav": "^3.0.0", 
+    "jQuery-One-Page-Nav": "^3.0.0",
     "jquery.stellar": "^0.6.2",
     "lightbox2": "^2.9.0",
     "matchHeight": "matchheight#^0.7.2",
