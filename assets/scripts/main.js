@@ -97,7 +97,6 @@ $(document).ready(function() {
   sponsorsSLider.owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
-    margin: 10,
     responsive:{
       0:{
           items: 1
