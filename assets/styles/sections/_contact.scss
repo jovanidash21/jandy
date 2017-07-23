@@ -1,0 +1,47 @@
+.contact-section {
+  @include background-size(cover);
+  background-attachment: fixed;
+  background-image: url("#{$images}/contact-bg.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  &:after {
+    @include background-color-opacity($color-black, 0.9);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .contact-column {
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 40px;
+    }
+  }
+  .contact-logo {
+    margin: 5px;
+  }
+  .contact-detail {
+    border-bottom: 1px solid $color-silver;
+    padding: 10px 0 15px;
+    margin-bottom: 25px
+  }
+  .contact-form {
+    label {
+      font-size: 15px;
+      padding-top: 5px;
+    } 
+  }
+  .form-submit {
+    width: 100%;
+  }
+  .social-logo {
+    @include transition(all 0.3s ease);
+    margin: 5px;
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-primary;
+    }
+  }
+}
