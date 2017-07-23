@@ -56,6 +56,19 @@ section[class*=-section] {
   position: relative;
 }
 
+// Animation
+.fadeIn {
+  @include fadeIn (
+    $delay: .3s
+  ); 
+}
+.zoomIn {
+  @include zoomIn(
+    $delay: .5s,
+    $duration: 1.1s
+  ); 
+}
+
 // Background
 .background-none {
   background: none !important;
@@ -231,4 +244,9 @@ section[class*=-section] {
 }
 .text-color-white {
   color: $color-alabaster;
+}
+
+// Wow js config
+.wow { 
+  visibility: hidden; 
 }

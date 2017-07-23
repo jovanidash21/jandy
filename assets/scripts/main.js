@@ -137,4 +137,7 @@ $(document).ready(function() {
   $.stellar({ 
     responsive: true 
   });
+
+  // Wow js Config
+  new WOW().init();
 });
