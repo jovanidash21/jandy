@@ -23,7 +23,7 @@ var IEVersion = detectIEVersion();
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
-var servicesSection = $('.services-section');
+var counterSection = $('.counter-section');
 var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
 
@@ -64,11 +64,11 @@ $(document).ready(function() {
     ]
   });
 
-  // Services section
-  var servicesSectionWaypoint = new Waypoint({
-    element: servicesSection,
+  // Counter section
+  var counterSectionWaypoint = new Waypoint({
+    element: counterSection,
     handler: function() {
-      servicesSection.find('.services-counter').countTo({
+      counterSection.find('.counter').countTo({
         refreshInterval: 11,
         speed: 900
       });
