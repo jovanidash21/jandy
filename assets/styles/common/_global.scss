@@ -192,16 +192,17 @@ section[class*=-section] {
 // ScrollUp
 #scrollUp {
   @include border-radius(10px);
-  @include opacity(0.5);
-  @include transition(opacity 0.3s ease);
-  background-color: $color-cod-gray;
+  @include transition(all 0.2s ease);
+  background: transparent;
+  border: 2px solid $color-cod-gray;
   bottom: 21px;
-  color: $color-primary;
+  color: $color-dusty-gray;
   padding: 0 12px 5px;
   right: 21px;
 }
 #scrollUp:hover {
-  @include opacity(1);
+  background-color: $color-cod-gray;
+  color: $color-white;
 }
 
 // Section
