@@ -61,5 +61,8 @@
         "lib/jquery.waypoints.min.js"
       ]
     }
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
   }
 }
