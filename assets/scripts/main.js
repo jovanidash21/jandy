@@ -23,6 +23,7 @@ var IEVersion = detectIEVersion();
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
+var servicesSection = $('.services-section');
 var counterSection = $('.counter-section');
 var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
@@ -63,6 +64,9 @@ $(document).ready(function() {
       "<i class='fa fa-chevron-right'></i>"
     ]
   });
+
+  // Services section
+  servicesSection.find('.service-card').matchHeight();
 
   // Counter section
   var counterSectionWaypoint = new Waypoint({
