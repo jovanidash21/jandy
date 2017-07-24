@@ -62,6 +62,11 @@ section[class*=-section] {
     $delay: .3s
   ); 
 }
+.fadeInUp {
+  @include fadeInUp (
+    $delay: .3s
+  );
+}
 .zoomIn {
   @include zoomIn(
     $delay: .5s,
