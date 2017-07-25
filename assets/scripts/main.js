@@ -66,7 +66,7 @@ $(document).ready(function() {
   });
 
   // Services section
-  servicesSection.find('.service-card').matchHeight();
+  servicesSection.find('.service-card .service-description').matchHeight();
 
   // Counter section
   var counterSectionWaypoint = new Waypoint({
