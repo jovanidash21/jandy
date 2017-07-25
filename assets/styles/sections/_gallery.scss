@@ -1,18 +1,51 @@
 .gallery-section {
   .gallery-thumbnail {
     margin: 10px 0;
+    overflow: hidden;
     position: relative;
     img {
       width: 100%;
     }
-    .overlay {
-      @include transition(.5s ease);
-      background-color: $color-secondary;
-    }
     &:hover {
+      .gallery-caption {
+        bottom: 100%;
+      }
       .overlay {
-        @include opacity(0.7);
+        height: 100%;
       }
     }
+  }
+  .gallery-caption,
+  .overlay {
+    @include background-color-opacity($color-primary, 0.8);
+    @include transition(all .5s ease);
+  }
+  .gallery-caption {
+    @include border-top-left-radius(11px);
+    @include border-top-right-radius(11px);
+    @include box-shadow(0 -5px 5px rgba($color-black, 0.5));
+    bottom: 0;
+    color: $color-white;
+    font-size: 17px;
+    left: 25px;
+    padding: 8px;
+    position: absolute;
+    right: 25px;
+  }
+  .overlay {
+    bottom: 0;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+  .zoom-icon {
+    @include transform(translate(-50%,-50%));
+    color: $color-secondary;
+    left: 50%;
+    position: absolute;
+    top: 50%
   }
 }
