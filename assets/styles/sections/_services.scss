@@ -6,7 +6,6 @@
     overflow: hidden;
   }
   .service-title {
-    @include transition(bottom 0.2s ease-in);
     background-color: $color-primary;
     bottom: 15px;
     color: $color-white;
@@ -20,13 +19,7 @@
     img {
       width: 100%;
     }
-    &:hover {
-      .service-title {
-        bottom: 100%;
-      }
-    }
   }
-  
   .service-description {
     font-size: 18px;
     padding: 5px 10px;
