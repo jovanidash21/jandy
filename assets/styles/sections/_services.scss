@@ -3,22 +3,21 @@
     @include border-radius(3px);
     @include box-shadow(0px 0px 11px $color-black);
     background-color: $color-white;
-    overflow: hidden;
-  }
-  .service-title {
-    background-color: $color-primary;
-    bottom: 15px;
-    color: $color-white;
-    left: 15px;
-    padding: 3px 8px;
-    position: absolute;
-    right: 15px;
   }
   .service-thumbnail {
     position: relative;
     img {
       width: 100%;
     }
+  }
+  .service-title {
+    background-color: $color-primary;
+    bottom: 15px;
+    color: $color-white;
+    left: 15px;
+    padding: 0 8px;
+    position: absolute;
+    right: 15px;
   }
   .service-description {
     font-size: 18px;
