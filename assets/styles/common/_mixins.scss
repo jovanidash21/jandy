@@ -14,6 +14,12 @@
   -webkit-#{$property}: #{$value};
 }
 
+/* Animation
+ * @param {name duration timing-function delay iteration-count direction fill-mode play-state} $value - Value
+ */
+@mixin animation($value) {
+  @include css3-prefix('animation', $value);
+}
 /* Background Linear Gradient
  * @param {direction|corner|angle} $angle - Angle
  * @param {color length|%} $colorStop1 - Color Stop 1
