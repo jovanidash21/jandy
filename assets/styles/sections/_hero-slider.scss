@@ -51,11 +51,13 @@
         }
       }
       .owl-prev {
-        @include border-radius(0 5px 5px 0);
+        @include border-bottom-right-radius(5px);
+        @include border-top-right-radius(5px);
         float: left;
       }
       .owl-next {
-        @include border-radius(5px 0 0 5px);
+        @include border-bottom-left-radius(5px);
+        @include border-top-left-radius(5px);
         float: right;
       }
     }
