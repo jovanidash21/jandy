@@ -4,7 +4,7 @@ body {
   width: 100%;
 }
 body {
-  background-color: $color-porcelain;
+  background-color: $color-silver;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -85,7 +85,7 @@ section[class*=-section] {
   background-color: $color-mine-shaft !important;
 }
 .background-gray {
-  background-color: $color-slate-gray !important;
+  background-color: $color-porcelain !important;
 }
 .background-light {
   background-color: $color-alabaster !important;
@@ -101,9 +101,6 @@ section[class*=-section] {
 }
 .background-quaternary {
   background-color: $color-quaternary !important;
-}
-.background-silver {
-  background-color: $color-silver !important;
 }
 .background-white {
   background-color: $color-white !important;
