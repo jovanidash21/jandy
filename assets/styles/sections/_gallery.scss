@@ -17,16 +17,16 @@
   }
   .gallery-caption,
   .overlay {
-    @include background-color-opacity($color-primary, 0.8);
-    @include transition(all .5s ease);
+    @include background-color-opacity($color-white, 0.5);
+    @include transition(all .4s ease);
   }
   .gallery-caption {
     @include border-top-left-radius(11px);
     @include border-top-right-radius(11px);
-    @include box-shadow(0 -5px 5px rgba($color-black, 0.5));
+    @include box-shadow(0 -5px 5px rgba($color-black, 0.3));
     bottom: 0;
-    color: $color-white;
-    font-size: 17px;
+    color: $color-black;
+    font-size: 16px;
     left: 25px;
     padding: 8px;
     position: absolute;
@@ -43,7 +43,7 @@
   }
   .zoom-icon {
     @include transform(translate(-50%,-50%));
-    color: $color-secondary;
+    color: $color-primary;
     left: 50%;
     position: absolute;
     top: 50%
