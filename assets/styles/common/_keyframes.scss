@@ -1,0 +1,16 @@
+@include keyframes(spin-clockwise) {
+  0% {
+    @include transform(rotate(0));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+@include keyframes(spin-counter-clockwise) {
+  0% {
+    @include transform(rotate(0));
+  }
+  100% {
+    @include transform(rotate(-360deg));
+  }
+}
