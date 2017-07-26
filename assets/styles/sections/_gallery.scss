@@ -14,10 +14,13 @@
         height: 100%;
       }
     }
+    @media (max-width: $screen-sm-max) {
+      margin: 20px 0;
+    }
   }
   .gallery-caption,
   .overlay {
-    @include background-color-opacity($color-white, 0.5);
+    @include background-color-opacity($color-white, 0.7);
     @include transition(all .4s ease);
   }
   .gallery-caption {
