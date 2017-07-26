@@ -28,6 +28,10 @@ var counterSection = $('.counter-section');
 var testimonialsSection = $('.testimonials-section');
 var sponsorsSection = $('.sponsors-section');
 
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+
 $(document).ready(function() {
   // Nav bar section
   navBarSection.find('.navbar-nav').onePageNav({
