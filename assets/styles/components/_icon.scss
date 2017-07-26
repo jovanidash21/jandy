@@ -5,37 +5,37 @@
     vertical-align: middle;
     text-align: center;
   }
-  &.icon-big {
+  #{&}-big {
     height: 150px;
     width: 150px;
   }
-  &.icon-medium {
+  #{&}-medium {
     height: 100px;
     width: 100px;
   }
-  &.icon-small {
+  #{&}-small {
     height: 50px;
     width: 50px;
   }
-  &.icon-circle {
+  #{&}-circle {
     @include border-radius(50%);
   }
-  &.icon-square {
+  #{&}-square {
     @include border-radius(3px);
   }
-  &.icon-primary {
+  #{&}-primary {
     background-color: $color-primary;
     color: $color-white;
   }
-  &.icon-secondary {
+  #{&}-secondary {
     background-color: $color-secondary;
     color: $color-white;
   }
-  &.icon-tertiary {
+  #{&}-tertiary {
     background-color: $color-tertiary;
     color: $color-white;
   }
-  &.icon-quaternary {
+  #{&}-quaternary {
     background-color: $color-quaternary;
     color: $color-black;
   }
