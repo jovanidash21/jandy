@@ -1,0 +1,40 @@
+.loader {
+  @include transform(translate(-50%,-50%));
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  #{&}-fixed {
+    position: fixed;
+  }
+   #{&}-absolute {
+    position: fixed;
+  }
+}
+.loading-bar {
+  @include border-radius(50%);
+  border-color: $color-tertiary;
+  border-bottom-color: $color-secondary;
+  border-top-color: $color-primary;
+  border-style: solid;
+  &.loading-big {
+    border-width: 21px;
+    height: 180px;
+    width: 180px;
+  }
+  &.loading-medium {
+    border-width: 14px;
+    height: 110px;
+    width: 110px;
+  }
+  &.loading-small {
+    border-width: 10px;
+    height: 70px;
+    width: 70px;
+  }
+  &.loading-clockwise {
+    @include animation(spin-clockwise 2s ease-in-out infinite);
+  }
+  &.loading-counter-clockwise {
+     @include animation(spin-xounter-clockwise 2s ease-in-out infinite);
+  }
+}
