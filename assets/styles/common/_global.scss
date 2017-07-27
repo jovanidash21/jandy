@@ -58,21 +58,29 @@ section[class*=-section] {
 }
 
 // Animation
-.fadeIn {
-  @include fadeIn (
-    $delay: .3s
-  ); 
-}
-.fadeInUp {
-  @include fadeInUp (
-    $delay: .3s
-  );
-}
-.zoomIn {
-  @include zoomIn(
-    $delay: .5s,
-    $duration: 1.1s
-  ); 
+.animated,
+.wow {
+  &.fadeIn {
+    @include fadeIn (
+      $delay: .3s
+    );
+  }
+  &.fadeInUp {
+    @include fadeInUp (
+      $delay: .3s
+    );
+  }
+  &.pulse {
+    @include pulse (
+      $delay: .3s
+    );
+  }
+  &.zoomIn {
+    @include zoomIn(
+      $delay: .5s,
+      $duration: 1.1s
+    );
+  }
 }
 
 // Background
