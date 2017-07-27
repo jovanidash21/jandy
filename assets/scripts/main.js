@@ -56,6 +56,7 @@ $(document).ready(function() {
   });
 
   // Hero slider section
+  var heroSlider = heroSliderSection.find('.owl-carousel');
   heroSliderSection.find('.owl-carousel').owlCarousel({
     autoplay: true,
     autoplayTimeout: 5000,
@@ -67,6 +68,12 @@ $(document).ready(function() {
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>"
     ]
+  }).on('changed.owl.carousel', function(event) {
+    var item = event.item.index - 2;     // Position of the current item
+    heroSlider.find('.hero-title').removeClass('animated fadeInUp');
+    heroSlider.find('.hero-subtitle').removeClass('animated pulse');
+    heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-title').addClass('animated fadeInUp');
+    heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-subtitle').addClass('animated pulse');
   });
 
   // Services section
