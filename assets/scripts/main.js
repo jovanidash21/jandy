@@ -123,8 +123,7 @@ $(document).ready(function() {
           items: 5
       }
     }
-  });
-  sponsorsSLider.on('mousewheel', '.owl-stage', function (e) {
+  }).on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
       sponsorsSLider.trigger('next.owl');
     } else {
