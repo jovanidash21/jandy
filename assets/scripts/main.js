@@ -1,3 +1,6 @@
+// Global varianbles
+/*global Waypoint, lightbox, WOW */
+
 // Detect IE version
 var detectIEVersion = function() {
   var userAgent = window.navigator.userAgent;
