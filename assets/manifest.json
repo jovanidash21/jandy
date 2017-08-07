@@ -38,8 +38,5 @@
         "wow"
       ]
     }
-  },
-  "config": {
-    "devUrl": "http://localhost:9000"
   }
 }

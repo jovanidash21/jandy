@@ -5,7 +5,8 @@ var browserSync = require('browser-sync').create();
 gulp.task('watch', ['webserver'], function () {
     browserSync.init({
         files: ['{dist}/**/*.html', '*.html'],
-        proxy: config.devUrl
+        proxy: config.dev.host + ':' + config.dev.port,
+        port: config.dev.watchPort
     });
     gulp.watch([config.assets + 'views/**/*'], ['views']);
     gulp.watch([config.assets + 'styles/**/*'], ['styles']);

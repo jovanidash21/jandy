@@ -8,7 +8,6 @@ var manifest = require('asset-builder')('./assets/manifest.json');
 var path = manifest.paths;
 var assets = path.source;
 var dist = path.dist;
-var config = manifest.config || {};
 var globs = manifest.globs;
 var project = manifest.getProjectGlobs();
 var revManifest = dist + 'assets.json';
@@ -27,7 +26,11 @@ var writeToManifest = function(directory) {
 };
 
 module.exports = {
-    devUrl: config.devUrl,
+    dev: {
+        host: 'localhost',
+        port: 3000,
+        watchPort: 9000
+    },
     enabled: {
         maps: !argvProduction,
         production: argvProduction

@@ -6,8 +6,7 @@ var handleErrors = require('../util/handleErrors');
 gulp.task('webserver', function() {
     return gulp.src(config.dist)
         .pipe(plugins.webserver({
-            livereload: true,
-            port: 9000
+            port: config.dev.port
         }))
         .on('error', handleErrors)
         .pipe(plugins.debug({title: 'webserver:'}));
