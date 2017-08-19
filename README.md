@@ -22,14 +22,14 @@ npm install
 ```
 bower install
 ```
-* Run gulp.
+* Run the project.
 ```
-gulp
+npm run build
 ```
 * Open with a browser the ```index.html``` inside the ```dist``` directory.
 * Run in dev mode.
 ```
-gulp watch
+npm run dev
 ```
 
 ## Gulp Tasks
@@ -51,6 +51,11 @@ gulp watch
 * ```gulp webserver``` - create a local webserver.
 * ```gulp watch``` - create a proxy to the dev server and synchronize code changes across devices.
 * ```gulp deploy``` - deploy the dist directory files to github pages.
+
+## NPM Scripts
+* ```npm start``` - start the project.
+* ```npm run build``` - run the project in production mode.
+* ```npm run dev``` - run the project in dev mode.
 
 ## License
 Licensed under [MIT](https://opensource.org/licenses/mit-license.php).
