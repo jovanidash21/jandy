@@ -1,10 +1,14 @@
 {
   "name": "jandy",
+  "version": "0.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "private": true,
   "author": "Jovani Warguez",
-  "license": "ISC",
-  "homepage": "",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jovanidash21/jandy.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
