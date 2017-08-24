@@ -6,7 +6,7 @@ body,
 }
 body {
   background-color: $color-silver;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $font-josefin-sans;
   margin: 0;
   padding: 0;
   position: relative;
@@ -17,7 +17,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Tangerine', sans-serif;
+  font-family: $font-tangerine;
 }
 h1 {
   font-size: 90px;

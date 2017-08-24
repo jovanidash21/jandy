@@ -13,7 +13,7 @@
     .site-logo {
       @include transition(color 0.5s ease);
       color: $color-white;
-      font-family: 'Tangerine', sans-serif;
+      font-family: $font-tangerine;
       font-size: 50px;
       letter-spacing: 2px;
       img {
@@ -22,7 +22,7 @@
       &:hover {
         color: $color-primary;
       }
-    }  
+    }
     @media (max-width: $screen-xs-max) {
       padding: 2px 5px;
     }
@@ -42,7 +42,7 @@
     @include transition(all 0.5s ease);
     display: inline-block;
     float: none;
-    font-family: 'Teko', sans-serif;
+    font-family: $font-teko;
     font-size: 20px;
     letter-spacing: 3px;
     .dropdown-menu .caret {
