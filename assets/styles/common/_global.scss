@@ -198,6 +198,9 @@ section[class*=-section] {
   color: $color-dusty-gray;
   padding: 0 12px 5px;
   right: 21px;
+  .lb-disable-scrolling & {
+    display: none;
+  }
 }
 #scrollUp:hover {
   background-color: $color-cod-gray;
