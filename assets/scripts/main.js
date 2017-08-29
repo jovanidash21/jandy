@@ -23,6 +23,16 @@ var detectIEVersion = function() {
 };
 var IEVersion = detectIEVersion();
 
+var calculateScrollBarWidth = function() {
+  var scrollBarDiv = document.createElement('div');
+  scrollBarDiv.className = 'modal-scrollbar-measure';
+  $(document.body).append(scrollBarDiv);
+  var scrollBarWidth = scrollBarDiv.offsetWidth - scrollBarDiv.clientWidth;
+  $(document.body)[0].removeChild(scrollBarDiv);
+  return scrollBarWidth;
+};
+var scrollBarWidth = calculateScrollBarWidth();
+
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
