@@ -36,6 +36,7 @@ var scrollBarWidth = calculateScrollBarWidth();
 // Sections
 var navBarSection = $('.nav-bar-section');
 var heroSliderSection = $('.hero-slider-section');
+var gallerySection = $('.gallery-section');
 var servicesSection = $('.services-section');
 var counterSection = $('.counter-section');
 var testimonialsSection = $('.testimonials-section');
@@ -87,6 +88,21 @@ $(document).ready(function() {
     heroSlider.find('.hero-subtitle').removeClass('animated pulse');
     heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-title').addClass('animated fadeInUp');
     heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-subtitle').addClass('animated pulse');
+  });
+
+  // Gallery section
+  if (!$('.lb-outerContainer').parent().hasClass('lb-wrapper')) {
+    $('.lb-outerContainer').wrap( "<div class='lb-wrapper'></div>" );
+  }
+  gallerySection.find('a[data-lightbox="main-gallery"]').on('click', function() {
+    $('body').css('padding-right', scrollBarWidth);
+    $('#lightboxOverlay, .lb-loader, .lb-close').on('click', function() {
+      $('body').css('padding-right', '0');
+    });
+    $('.lb-wrapper').on('click', function() {
+      $('body').css('padding-right', '0');
+      $('.lb-close').click();
+    });
   });
 
   // Services section
