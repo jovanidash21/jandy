@@ -7,6 +7,7 @@ gulp.task('build', function (callback) {
     'styles',
     'scripts',
     ['fonts', 'images'],
+    'favicon:inject',
     callback
   );
 });
