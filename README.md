@@ -46,6 +46,9 @@ npm run dev
 * ```gulp lint``` -  lints configuration JSON and project JS.
 * ```gulp scripts``` -  compiles, combines, and optimizes bower JS and project JS.
 * ```gulp scripts --production``` - compiles, combines, and optimizes bower JS and project JS for production.
+* ```gulp favicon:generate``` - generate the icons.
+* ```gulp favicon:inject``` - inject favicon markups in HTML files.
+* ```gulp favicon:update``` - check for updates on RealFaviconGenerator.
 * ```gulp build``` - run all build tasks.
 * ```gulp build --production``` - run all build tasks for production.
 * ```gulp webserver``` - create a local webserver.
