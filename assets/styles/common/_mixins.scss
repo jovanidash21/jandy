@@ -119,6 +119,9 @@
   @-moz-keyframes #{$animationName} {
     @content;
   }
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
   @-o-keyframes #{$animationName} {
     @content;
   }
