@@ -15,6 +15,13 @@
         position: absolute;
         top: 50%;
         width: 80%;
+        .hero-title,
+        .hero-subtitle {
+          visibility: hidden;
+          &.animated {
+            visibility: visible;
+          }
+        }
         .hero-title {
           color: $color-white;
           font-size: 111px;

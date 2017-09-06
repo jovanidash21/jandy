@@ -71,7 +71,22 @@ $(document).ready(function() {
 
   // Hero slider section
   var heroSlider = heroSliderSection.find('.owl-carousel');
-  heroSliderSection.find('.owl-carousel').owlCarousel({
+  var heroTitle = heroSlider.find('.hero-title');
+  var heroSubtitle = heroSlider.find('.hero-subtitle');
+  var heroTitleAnimation = heroTitle.data('animation');
+  var heroSubtitleAnimation = heroSubtitle.data('animation');
+  var heroTitleDelay = heroTitle.data('delay');
+  var heroSubtitleDelay = heroSubtitle.data('delay');
+
+  setTimeout(function () {
+      heroTitle.addClass('animated ' + heroTitleAnimation);
+    }, heroTitleDelay
+  );
+  setTimeout(function () {
+      heroSubtitle.addClass('animated ' + heroSubtitleAnimation);
+    }, heroSubtitleDelay
+  );
+  heroSlider.owlCarousel({
     autoplay: true,
     autoplayTimeout: 5000,
     dots: false,
@@ -83,11 +98,19 @@ $(document).ready(function() {
       "<i class='fa fa-chevron-right'></i>"
     ]
   }).on('changed.owl.carousel', function(event) {
-    var item = event.item.index - 2;     // Position of the current item
-    heroSlider.find('.hero-title').removeClass('animated fadeInUp');
-    heroSlider.find('.hero-subtitle').removeClass('animated pulse');
-    heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-title').addClass('animated fadeInUp');
-    heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-subtitle').addClass('animated pulse');
+    var item = event.item.index - 2; // Position of the current item
+
+    heroTitle.removeClass('animated ' + heroTitleAnimation);
+    heroSubtitle.removeClass('animated ' + heroSubtitleAnimation);
+
+    setTimeout(function () {
+        heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-title').addClass('animated ' + heroTitleAnimation);
+      }, heroTitleDelay
+    );
+    setTimeout(function () {
+        heroSlider.find('.owl-item').not('.cloned').eq(item).find('.hero-subtitle').addClass('animated ' + heroSubtitleAnimation);
+      }, heroSubtitleDelay
+    );
   });
 
   // Gallery section
