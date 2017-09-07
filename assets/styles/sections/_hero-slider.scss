@@ -1,7 +1,12 @@
 .hero-slider-section {
-  height: 100%;
-  div:not(.hero-text):not(.owl-dots):not(.owl-nav) {
-    height: 100%;
+  &,
+  div:not(.hero-text):not(.owl-dots):not(.owl-nav):not(.owl-prev):not(.owl-next) {
+    @media (max-width: $screen-xs-max) {
+      min-height: 500px;
+    }
+    @media (min-width: $screen-sm-min) {
+      min-height: 700px;
+    }
   }
   .hero-slider {
     .hero-item {
@@ -35,21 +40,19 @@
       }
     }
     .owl-nav {
-      @include transform(translate(-50%,-50%));
-      left: 50%;
       margin-top: 0;
-      position: absolute;
-      top: 50%;
-      width: 100%;
       .owl-prev,
       .owl-next {
         @include opacity(0.3);
         @include transition(opacity 0.3s ease);
+        @include transform(translate(0,-50%));
         color: $color-secondary;
         background-color: $color-black;
         font-size: 17px;
         margin: 0;
         padding: 30px 26px;
+        position: absolute;
+        top: 50%;
         &:hover {
           @include opacity(0.8);
         }
@@ -60,12 +63,12 @@
       .owl-prev {
         @include border-bottom-right-radius(5px);
         @include border-top-right-radius(5px);
-        float: left;
+        left: 0;
       }
       .owl-next {
         @include border-bottom-left-radius(5px);
         @include border-top-left-radius(5px);
-        float: right;
+        right: 0;
       }
     }
   }
