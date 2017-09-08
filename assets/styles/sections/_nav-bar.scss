@@ -80,6 +80,7 @@
   @media (max-width: $screen-xs-max) {
     .navbar-offcanvas {
       background-color: $color-tertiary;
+      overflow: auto;
     }
   }
 }
