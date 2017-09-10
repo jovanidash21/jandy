@@ -103,6 +103,13 @@
   display: #{$value};
   display: -webkit-#{$value};
 }
+/* Font Size
+ * @param {number} $value - Value
+ */
+@mixin font-size($value) {
+  font-size: $value * 1px;
+  font-size: $value * 0.1rem;
+}
 /* Grayscale
  * @param {percent} $value - Value
  */
