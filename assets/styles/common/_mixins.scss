@@ -107,8 +107,8 @@
  * @param {number} $value - Value
  */
 @mixin font-size($value) {
-  font-size: $value * 1px;
-  font-size: $value * 0.1rem;
+  font-size: $value * 10px;
+  font-size: $value * 1rem;
 }
 /* Grayscale
  * @param {percent} $value - Value
