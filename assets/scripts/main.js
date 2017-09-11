@@ -73,8 +73,9 @@ $(document).ready(function() {
     var heroSlider = heroSliderSection.find('.owl-carousel');
     var heroTitle = heroSlider.find('.hero-title');
     var heroSubtitle = heroSlider.find('.hero-subtitle');
-    var heroTitleAnimation = heroTitle.data('animation');
-    var heroSubtitleAnimation = heroSubtitle.data('animation');
+    var animated = 'animated ';
+    var heroTitleAnimation = animated + heroTitle.data('animation');
+    var heroSubtitleAnimation = animated + heroSubtitle.data('animation');
     var heroTitleDelay = heroTitle.data('delay');
     var heroSubtitleDelay = heroSubtitle.data('delay');
 
@@ -101,15 +102,15 @@ $(document).ready(function() {
     }).on('change.owl.carousel', function(event) {
       heroTitle.removeClass('animated ' + heroTitleAnimation);
       heroSubtitle.removeClass('animated ' + heroSubtitleAnimation);
-      heroSlider.find('.owl-item.cloned').find('.hero-title').removeClass('animated ' + heroTitleAnimation);
-      heroSlider.find('.owl-item.cloned').find('.hero-subtitle').removeClass('animated ' + heroTitleAnimation);
+      heroSlider.find('.owl-item.cloned').find('.hero-title').removeClass(heroTitleAnimation);
+      heroSlider.find('.owl-item.cloned').find('.hero-subtitle').removeClass(heroSubtitleAnimation);
     }).on('changed.owl.carousel', function(event) {
       setTimeout(function () {
-          heroSlider.find('.owl-item.active').find('.hero-title').addClass('animated ' + heroTitleAnimation);
+          heroSlider.find('.owl-item.active').find('.hero-title').addClass(heroTitleAnimation);
         }, heroTitleDelay
       );
       setTimeout(function () {
-          heroSlider.find('.owl-item.active').find('.hero-subtitle').addClass('animated ' + heroSubtitleAnimation);
+          heroSlider.find('.owl-item.active').find('.hero-subtitle').addClass(heroSubtitleAnimation);
         }, heroSubtitleDelay
       );
     });
