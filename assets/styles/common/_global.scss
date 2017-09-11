@@ -4,6 +4,20 @@ body,
   height: 100%;
   width: 100%;
 }
+html {
+  @media (min-width: $screen-xs-min) {
+    font-size: 9px;
+  }
+  @media (min-width: $screen-sm-max) {
+    font-size: 10px;
+  }
+  @media (min-width: $screen-md-min) {
+    font-size: 12px;
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 14px;
+  }
+}
 body {
   background-color: $color-silver;
   font-family: $font-josefin-sans;
@@ -20,27 +34,27 @@ h4 {
   font-family: $font-tangerine;
 }
 h1 {
-  font-size: 90px;
+  @include font-size(6.4);
   font-weight: 500;
   letter-spacing: 4px;
 }
 h2 {
-  font-size: 70px;
+  @include font-size(5);
   font-weight: 400;
   letter-spacing: 3px;
 }
 h3 {
-  font-size: 50px;
+  @include font-size(3.8);
   font-weight: 200;
   letter-spacing: 2px;
 }
 h4 {
-  font-size: 40px;
+  @include font-size(2.9);
   font-weight: 200;
   letter-spacing: 1px;
 }
 h5 {
-  font-size: 17px;
+  @include font-size(1.2);
   text-transform: uppercase;
 }
 a {

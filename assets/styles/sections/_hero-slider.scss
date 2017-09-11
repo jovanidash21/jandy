@@ -28,14 +28,14 @@
           }
         }
         .hero-title {
+          @include font-size(8);
           color: $color-white;
-          font-size: 111px;
           font-weight: 400;
         }
         .hero-subtitle {
           @include background-color-opacity($color-primary, 0.5);
+          @include font-size(2.9);
           color: $color-secondary;
-          font-size: 40px;
         }
       }
     }
@@ -43,12 +43,12 @@
       margin-top: 0;
       .owl-prev,
       .owl-next {
+        @include font-size(1.2);
         @include opacity(0.3);
         @include transition(opacity 0.3s ease);
         @include transform(translate(0,-50%));
         color: $color-secondary;
         background-color: $color-black;
-        font-size: 17px;
         margin: 0;
         padding: 30px 26px;
         position: absolute;

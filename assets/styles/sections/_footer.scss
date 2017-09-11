@@ -1,11 +1,11 @@
 .footer-section {
   padding: 30px 0;
   .copyright {
-    font-size: 21px;
+    @include font-size(1.5);
   }
   .love {
+    @include font-size(1.8);
     font-family: $font-tangerine;
-    font-size: 25px;
     letter-spacing: 2px;
     .heart {
       color: $color-crimson;

@@ -27,9 +27,9 @@
     @include border-top-left-radius(11px);
     @include border-top-right-radius(11px);
     @include box-shadow(0 -5px 5px rgba($color-black, 0.3));
+    @include font-size(1.1);
     bottom: 0;
     color: $color-black;
-    font-size: 16px;
     left: 25px;
     padding: 8px;
     position: absolute;

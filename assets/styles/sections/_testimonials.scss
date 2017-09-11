@@ -1,21 +1,21 @@
 .testimonials-section {
   blockquote {
-    font-size: 20px;
+    @include font-size(1.4);
   }
   .testimonials-slider {
     margin: 20px 0;
     .testimonial-name {
-      font-size: 18px;
+      @include font-size(1.2);
     }
     .owl-nav {
       .owl-prev,
       .owl-next {
         @include border-radius(5px);
+        @include font-size(1.2);
         @include transition(all 0.3s ease);
         background-color: transparent;
         border: 2px solid $color-black;
         color: $color-black;
-        font-size: 17px;
         margin: 10px;
         padding: 8px 10px 2px;
         &:hover {

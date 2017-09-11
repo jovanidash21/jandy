@@ -29,7 +29,7 @@
   }
   .contact-form {
     label {
-      font-size: 15px;
+      @include font-size(1);
       padding-top: 5px;
     } 
   }

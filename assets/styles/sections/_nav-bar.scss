@@ -11,10 +11,10 @@
   }
   .navbar-brand {
     .site-logo {
+      @include font-size(3.6);
       @include transition(color 0.5s ease);
       color: $color-white;
       font-family: $font-tangerine;
-      font-size: 50px;
       letter-spacing: 2px;
       img {
         height: 55px;
@@ -39,11 +39,11 @@
     }
   }
   ul.navbar-nav {
+    @include font-size(1.4);
     @include transition(all 0.5s ease);
     display: inline-block;
     float: none;
     font-family: $font-teko;
-    font-size: 20px;
     letter-spacing: 3px;
     .dropdown-menu .caret {
       @include transform(rotate(-90deg));

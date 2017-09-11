@@ -1,5 +1,5 @@
 .welcome-section {
   .welcome-description {
-    font-size: 25px;
+    @include font-size(1.8);
   }
 }

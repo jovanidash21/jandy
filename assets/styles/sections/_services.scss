@@ -24,7 +24,7 @@
     right: 15px;
   }
   .service-description {
-    font-size: 18px;
+    @include font-size(1.4);
     padding: 5px 10px;
   }
 }

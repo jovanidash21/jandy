@@ -1,6 +1,6 @@
 .sponsors-section {
   p {
-    font-size: 20px;
+    @include font-size(1.4);
   }
   .sponsors-slider {
     margin: 15px 0;

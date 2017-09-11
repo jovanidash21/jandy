@@ -1,9 +1,9 @@
 .counter-section {
   .counter {
-    font-size: 150px;
-  }  
+    @include font-size(10.7);
+  }
   .counter-description {
-    font-size: 20px;
+    @include font-size(1.4);
   }
   .counter-icon {
     color: $color-primary;
