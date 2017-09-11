@@ -60,5 +60,8 @@ npm run dev
 * ```npm run build``` - run the project in production mode.
 * ```npm run dev``` - run the project in dev mode.
 
+## Website
+[Live Demo](https://jandy-jovanidash21.herokuapp.com/)
+
 ## License
 Licensed under [MIT](https://opensource.org/licenses/mit-license.php).
