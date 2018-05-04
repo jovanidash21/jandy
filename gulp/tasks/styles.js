@@ -27,11 +27,6 @@ var cssTasks = function(filename) {
           'opera 12'
         ]
       })
-      .pipe(plugins.cssnano, ({discardComments: {removeAll: true}}))
-      .pipe(plugins.rename, ({
-        suffix: ".min",
-        extname: ".css"
-      }))
     .pipe(function() {
       return plugins.if(config.enabled.maps, plugins.sourcemaps.write('.', {
         sourceRoot: config.styles.src
